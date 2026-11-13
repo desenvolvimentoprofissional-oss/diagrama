@@ -1,0 +1,11 @@
+import 'dotenv/config';
+import express from 'express';
+import { createServer } from 'vite';
+import { createApi } from './api';
+const app = express();
+app.disable('x-powered-by');
+app.use('/api', createApi());
+const vite = await createServer({ server: { middlewareMode: true }, appType: 'spa' });
+app.use(vite.middlewares);
+const server = app.listen(Number(process.env.PORT) || 3000, '0.0.0.0', () => console.log('Diagrama.ai iniciado.'));
+server.requestTimeout = 600000;

@@ -1,6 +1,5 @@
 {
-  "name": "diagrama",
-  "description": "diagrama",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "Diagrama.ai",
+  "description": "Documentos diagramados, editáveis e conectados ao Work.",
+  "requestFramePermissions": []
 }

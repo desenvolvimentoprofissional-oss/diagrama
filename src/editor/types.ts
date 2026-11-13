@@ -1,0 +1,22 @@
+import type { DocumentProject, ReviewIssue } from '../../shared/document';
+export type EditorProps = {
+  project: DocumentProject;
+  onChange: (project: DocumentProject) => void;
+  busy: boolean;
+  onImport: (file: File) => void;
+  onGenerate: (instructions: string) => void;
+  onExport: (format: 'pdf' | 'docx') => void;
+  onReview: () => void;
+  onSave: () => void;
+  onLibrary: () => void;
+  onNew: () => void;
+  storageStatus: string;
+  canSave: boolean;
+  issues: ReviewIssue[];
+  message?: string;
+  error?: string;
+  aiConfigured?: boolean;
+  onCancel?: () => void;
+  onSaveCopy?: () => void;
+  saveCopyEnabled?: boolean;
+};
