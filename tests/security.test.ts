@@ -43,9 +43,46 @@ test('real HTTP backend starts without OpenAI secrets and rejects all processing
   try {
     const status=await fetch(base+'/api/status');assert.equal(status.status,200);
     const body=await status.json();assert.equal(typeof body.data.configured,'boolean');
-    for(const path of ['import','generate','review','export/pdf','export/docx']){
+    for(const path of ['import','generate','generate/stream','review','export/pdf','export/docx']){
       const response=await fetch(`${base}/api/${path}`,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
       assert.equal(response.status,401);assert.match((await response.json()).error,/Work/);
     }
   } finally { await new Promise<void>(resolve=>server.close(()=>resolve())); }
+});
+
+test('native graph payloads keep their structure and validate node references before processing',()=>{
+  const project=createProject(); const original=makeBlock('paragraph','O pedido é analisado antes da aprovação.');
+  project.source={name:'origem.docx',format:'docx',sha256:'a'.repeat(64),blocks:[original],warnings:[],pageCount:0,ocr:false};
+  const diagram=makeBlock('diagram','Procedimento'); diagram.sourceIds=[original.id]; diagram.layout='process';
+  diagram.nodes=[{id:'analysis',label:'Análise',detail:'',sourceIds:[original.id]},
+    {id:'approval',label:'Aprovação',detail:'',sourceIds:[original.id]}];
+  diagram.edges=[{from:'analysis',to:'approval',label:''}];project.blocks=[diagram];
+  assert.deepEqual(validatedProject(project),project);
+  diagram.nodes[1].id='analysis'; assert.throws(()=>validatedProject(project),{status:400});
+  diagram.nodes[1].id='approval';diagram.edges[0].to='unknown';
+  assert.throws(()=>validatedProject(project),{status:400});
+  diagram.edges[0].to='approval';diagram.nodes[0].sourceIds=['unknown'];
+  assert.throws(()=>validatedProject(project),{status:400});
+});
+test('hidden graph content and empty diagrams are rejected without changing legacy projects',()=>{
+  const project=createProject();const diagram=makeBlock('diagram');project.blocks=[diagram];
+  assert.throws(()=>validatedProject(project),{status:400});
+  diagram.nodes=[{id:'node',label:'',detail:'',sourceIds:[]}];assert.doesNotThrow(()=>validatedProject(project));
+  diagram.kind='paragraph';assert.throws(()=>validatedProject(project),{status:400});
+  diagram.nodes=[];assert.doesNotThrow(()=>validatedProject(project));
+});
+
+test('UTF-8 project budget is enforced before a document reaches paid processing',()=>{
+  const project=createProject();
+  project.blocks=Array.from({length:29},()=>makeBlock('paragraph','中'.repeat(400000)));
+  assert.throws(()=>validatedProject(project),{status:413});
+});
+test('total JSON element budget matches Work even when graph payloads are small',()=>{
+  const project=createProject();
+  project.blocks=Array.from({length:4000},()=>{
+    const block=makeBlock('diagram');
+    block.nodes=Array.from({length:10},(_,index)=>({id:String(index),label:'',detail:'',sourceIds:[]}));
+    return block;
+  });
+  assert.throws(()=>validatedProject(project),{status:400});
 });

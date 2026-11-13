@@ -10,7 +10,7 @@ const source = [
   blockSchema.parse({id:'art-2',sourceIds:['art-2'],kind:'paragraph',text:'Art. 2º São objetivos do Programa:'}),
 ];
 function projectWith(blocks:DocumentBlock[]) {
-  const project=createProject();
+  const project=createProject();project.mode='integral';
   project.source={name:'regulamento.docx',format:'docx',sha256:'a'.repeat(64),blocks:source,warnings:[],pageCount:0,ocr:false};
   project.blocks=blocks; return project;
 }
@@ -113,4 +113,18 @@ test('import limitations remain visible in the document audit',()=>{
   const project=projectWith(source);
   project.source!.warnings=['Confira os cabeçalhos e rodapés no original.'];
   assert(auditProject(project).some(issue=>issue.severity==='warning' && /cabeçalhos/.test(issue.message)));
+});
+
+
+test('source-derived table rows are preserved literally even when the model retypes cells incorrectly',()=>{
+  const original=blockSchema.parse({id:'table',sourceIds:['table'],kind:'table',rows:[['Critério','Condição'],['Taxa','R$ 100,00']]});
+  const output=applyExplanation({blocks:[{kind:'table',sourceIds:['table'],text:'Condições',level:1,
+    rows:[['Wrong']],items:[],caption:'',breakBefore:false}]},[original]);
+  assert.deepEqual(output[0].rows,original.rows);
+});
+
+
+test('article citations preserve enumerated and ranged references from the actual source', async()=>{
+  const {citedArticleNumbers}=await import('../shared/integrity');
+  assert.deepEqual(citedArticleNumbers('arts. 24 e 25; artigos 3º a 5º; art. 9º'),['24','25','3','4','5','9']);
 });

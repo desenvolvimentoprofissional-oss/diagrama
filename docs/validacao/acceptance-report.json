@@ -1,0 +1,127 @@
+{
+  "sourceBlocks": 92,
+  "sourceParagraphCount": 74,
+  "sourceHeadingCount": 17,
+  "sourceTableCount": 1,
+  "outputBlocks": 57,
+  "graphs": 2,
+  "sourceCoverage": 92,
+  "totalSourceBlocks": 92,
+  "audit": [
+    {
+      "severity": "warning",
+      "message": "A importação preserva o texto e a estrutura reconhecida; cabeçalhos, rodapés, caixas de texto, equações e marcações de revisão devem ser conferidos no original."
+    },
+    {
+      "severity": "info",
+      "message": "A versão explicativa contém redação gerada. A cobertura das referências não substitui a conferência editorial do significado."
+    }
+  ],
+  "layout": {
+    "pages": 17,
+    "issues": []
+  },
+  "word": {
+    "available": true,
+    "completed": true,
+    "pages": 17,
+    "issues": [],
+    "tocPages": {
+      "9405a2b9-aa43-4571-a752-9fb0436a84a9": 3,
+      "d07e7909-434c-4ac8-9f73-58317f55c6f1": 3,
+      "523685e0-3d78-4a71-b0e9-0affcff48b1f": 3,
+      "9b729611-f761-42e6-8156-a1ec0c092e8f": 4,
+      "101bac81-5059-4c90-a2ab-5d9ef64052fc": 4,
+      "74593802-0bf2-4c97-b3a1-ff68a5556b2e": 5,
+      "6ec69e5c-a370-42e7-a464-7aeed8d5bfef": 5,
+      "917dbfed-c665-4618-85f0-edce153f5fb5": 5,
+      "85629e1d-6f2a-4549-b161-644a073b76c2": 6,
+      "6302b13f-4a49-4ffd-9b67-811740e8ec46": 6,
+      "b25727f9-a3b1-4e17-912f-01c4b286b1ed": 7,
+      "3575bdda-d280-4705-a40f-5a894d35e261": 8,
+      "e10b9ab1-1a31-43ff-90d8-0b6e3d1e0a48": 9,
+      "97e65488-e231-4e97-9775-c8cbee3ee2ca": 10,
+      "968bd553-3e84-4a72-b02f-b6a382e045a4": 10,
+      "27a5feac-9d66-47be-b6c2-089f361472f4": 12,
+      "c8dd2e2f-5ce7-47a5-bf14-d5f01ad03e37": 13,
+      "13f80bf3-ec7f-4fc5-9112-c15c56f7c55e": 14,
+      "73966575-fc55-43e9-8ed4-13e6ca823d61": 14,
+      "b890d231-6c6e-474a-b9da-849f8919eaee": 14,
+      "cd00e88c-fed5-455f-8b3e-f7903ef37a08": 15,
+      "e61ee0ef-8f13-4bc1-aa3c-d6d42fb753bc": 16,
+      "e73fbbc9-7046-4b81-8af3-3ebcbe9273cd": 17
+    },
+    "images": [
+      {
+        "page": 1,
+        "bytes": 114171
+      },
+      {
+        "page": 2,
+        "bytes": 115211
+      },
+      {
+        "page": 3,
+        "bytes": 123731
+      },
+      {
+        "page": 4,
+        "bytes": 71587
+      },
+      {
+        "page": 5,
+        "bytes": 138331
+      },
+      {
+        "page": 6,
+        "bytes": 112139
+      },
+      {
+        "page": 7,
+        "bytes": 87623
+      },
+      {
+        "page": 8,
+        "bytes": 81327
+      },
+      {
+        "page": 9,
+        "bytes": 96423
+      },
+      {
+        "page": 10,
+        "bytes": 65619
+      },
+      {
+        "page": 11,
+        "bytes": 125311
+      },
+      {
+        "page": 12,
+        "bytes": 104643
+      },
+      {
+        "page": 13,
+        "bytes": 52767
+      },
+      {
+        "page": 14,
+        "bytes": 160463
+      },
+      {
+        "page": 15,
+        "bytes": 116599
+      },
+      {
+        "page": 16,
+        "bytes": 111951
+      },
+      {
+        "page": 17,
+        "bytes": 83587
+      }
+    ]
+  },
+  "wordProofMs": 11562,
+  "totalMs": 19218
+}

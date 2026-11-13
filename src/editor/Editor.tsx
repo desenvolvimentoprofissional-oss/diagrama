@@ -9,11 +9,14 @@ import { AiPanel } from './AiPanel';
 import { DocumentSettings } from './DocumentSettings';
 import { BlockInspector } from './BlockInspector';
 import { EmptyDocument } from './EmptyDocument';
+import { GenerationStatus, QualitySummary } from './GenerationStatus';
 import type { EditorProps } from './types';
 export type { EditorProps } from './types';
 export default function Editor(props: EditorProps) {
   const { project, busy } = props;
   const fileInput = useRef<HTMLInputElement>(null);
+  const customInstructions=useRef('');
+  const rememberInstructions=useCallback((value:string)=>{customInstructions.current=value;},[]);
   const [selectedId, setSelectedId] = useState<string>();
   const [inspectorTab, setInspectorTab] = useState<'document' | 'block'>('document');
   const [panel, setPanel] = useState<'outline' | 'inspector' | null>(null);
@@ -59,6 +62,7 @@ export default function Editor(props: EditorProps) {
   }
   function addBlock(kind: DocumentBlock['kind']) {
     const block = makeBlock(kind);
+    if (kind === 'diagram') { block.layout='process'; block.nodes=[{id:crypto.randomUUID(),label:'',detail:'',sourceIds:[]}]; block.edges=[]; }
     if (kind === 'table') block.rows = [['', ''], ['', '']];
     if (kind === 'cards' || kind === 'steps') block.items = [{ title: '', text: '' }, { title: '', text: '' }];
     const index = selected ? project.blocks.indexOf(selected) + 1 : project.blocks.length;
@@ -80,7 +84,7 @@ export default function Editor(props: EditorProps) {
   }
   return <div className="dg-app">
     <input ref={fileInput} type="file" accept=".docx,.pdf,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-      hidden onChange={event => { const file = event.target.files?.[0]; if (file) props.onImport(file); event.target.value = ''; }} />
+      hidden onChange={event => { const file = event.target.files?.[0]; if (file) props.onImport(file,project.source?'':customInstructions.current); event.target.value = ''; }} />
     <header className="dg-app-header">
       <a className="dg-brand" href="#" onClick={event => event.preventDefault()} aria-label="Diagrama.ai">
         <span className="dg-brand-symbol"><Columns3 size={20} strokeWidth={2.2} /></span><strong>diagrama<span>.ai</span></strong></a>
@@ -125,6 +129,7 @@ export default function Editor(props: EditorProps) {
           <Settings2 size={19} /></button>
       </div>
     </div>
+    {props.progress && <GenerationStatus progress={props.progress} busy={busy}/>}
     {(props.error || props.message || busy) && <div className={`dg-feedback ${props.error ? 'is-error' : busy ? 'is-busy' : 'is-info'}`}
       role={props.error ? 'alert' : 'status'} aria-live="polite">
       {props.error ? <AlertCircle size={17} /> : busy ? <LoaderCircle size={17} className="dg-spin" /> : <Info size={17} />}
@@ -137,7 +142,7 @@ export default function Editor(props: EditorProps) {
         <div className="dg-mobile-panel-title">Estrutura<button className="dg-icon-button" aria-label="Fechar estrutura"
           onClick={() => setPanel(null)}><X size={17} /></button></div>
         <AiPanel project={project} busy={busy} configured={props.aiConfigured}
-          onMode={mode => change({ mode })} onGenerate={props.onGenerate} />
+          onMode={mode => change({ mode })} onGenerate={props.onGenerate} onInstructionsChange={rememberInstructions} />
         <Outline project={project} selectedId={selectedId} onSelect={selectFromOutline} onAdd={addBlock} disabled={busy} />
       </aside>
       <section className="dg-canvas" aria-label="Visualização do documento">
@@ -159,7 +164,9 @@ export default function Editor(props: EditorProps) {
           <button role="tab" aria-selected={inspectorTab === 'block'} className={inspectorTab === 'block' ? 'is-active' : ''}
             onClick={() => setInspectorTab('block')}>Componente</button>
         </div>
-        <div className="dg-inspector-content">{inspectorTab === 'document' ? <DocumentSettings project={project}
+        <div className="dg-inspector-content">{props.report && inspectorTab==='document' && <QualitySummary report={props.report}
+          onIssues={() => setReviewOpen(true)}/>}
+        {inspectorTab === 'document' ? <DocumentSettings project={project}
           onChange={change} disabled={busy} /> : selected ? <BlockInspector block={selected} project={project} disabled={busy}
             onChange={updateBlock} onMove={moveBlock} onDuplicate={duplicate}
             onRemove={() => { change({ blocks: project.blocks.filter(block => block.id !== selected.id) }); setSelectedId(undefined); }} /> :

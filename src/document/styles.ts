@@ -12,7 +12,7 @@ export const documentCss = String.raw`
 .dg-document .dg-organization{font-weight:700;color:var(--dg-primary);font-size:9pt;white-space:nowrap}
 .dg-document .dg-footer{position:absolute;bottom:12mm;left:0;right:20mm;height:9mm;display:flex;align-items:center;justify-content:space-between;color:#68748a;font-size:7pt;line-height:1.3}
 .dg-document .dg-page-number{background:var(--dg-primary);color:#fff;font-weight:700;padding:2mm 5mm 2mm 5mm;min-width:20mm;clip-path:polygon(0 0,83% 0,100% 50%,83% 100%,0 100%)}
-.dg-document .dg-footer-label{max-width:125mm;text-align:right;overflow-wrap:anywhere;max-height:10mm;overflow:hidden}
+.dg-document .dg-footer-label{max-width:125mm;text-align:right;overflow-wrap:anywhere;max-height:10mm;overflow:hidden;white-space:pre-line}
 .dg-document .dg-body{height:242mm;width:170mm;display:flow-root;position:relative;font-size:var(--dg-body-size);line-height:1.55;overflow:visible}
 .dg-document .dg-block{margin:0 0 3.5mm;padding:0;overflow-wrap:anywhere;white-space:pre-wrap;max-width:100%;cursor:inherit;border:0;font-size:inherit;line-height:inherit;letter-spacing:normal;box-shadow:none;background:none;color:inherit}
 .dg-document .dg-heading{font-weight:700;line-height:1.25;break-after:avoid;color:var(--dg-primary);margin:4mm 0 3mm}
@@ -57,4 +57,44 @@ export const documentCss = String.raw`
 .dg-document .dg-empty{color:#7c889a;text-align:center;padding:30mm 0;font-size:11pt;line-height:1.6}
 @page{size:A4;margin:0}
 @media print{html,body{margin:0!important;padding:0!important;background:#fff!important}.dg-document .document-page{margin:0;box-shadow:none;break-after:page}.dg-document .document-page:last-child{break-after:auto}.dg-document .dg-selected{outline:none}.dg-document{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+`;
+
+/** Infographics share the institutional palette and remain selectable native elements. */
+export const diagramCss=String.raw`
+.dg-document{counter-reset:dg-infographic}
+.dg-document .dg-component-heading{font-size:20pt!important;color:var(--dg-primary)!important;border:0!important;padding-left:0!important;margin-top:5mm!important;margin-bottom:4mm!important;line-height:1.22}
+.dg-document .dg-component-heading:before{counter-increment:dg-infographic;content:'INFOGRÁFICO ' counter(dg-infographic);display:block;font-size:8pt;letter-spacing:.04em;border-left:2px solid var(--dg-accent);padding-left:2mm;margin-bottom:3mm;line-height:1.2}
+.dg-document .dg-diagram{position:relative;margin:0 0 5mm;padding:4.5mm;background:#f1f4fa;border:1px solid #d6dfec;border-radius:4mm;break-inside:avoid;overflow:visible}
+.dg-document .dg-diagram-canvas{position:relative;margin:0 auto}
+.dg-document .dg-diagram-node{position:absolute;display:flex;gap:3mm;align-items:flex-start;padding:4mm;background:#fff;border:1px solid #d4dce8;border-radius:2.5mm;box-shadow:0 1px 1px #18336408;z-index:2;min-height:14mm}
+.dg-document .dg-diagram-number{display:block;flex-shrink:0;width:6.5mm;height:6.5mm;background:var(--dg-primary);color:#fff;border-radius:50%;text-align:center;line-height:6.5mm;font-size:9pt;font-weight:700}
+.dg-document .dg-diagram-node-content{min-width:0;flex:1}
+.dg-document .dg-diagram-label{font-size:11pt;font-weight:700;color:var(--dg-primary);line-height:1.3;white-space:pre-wrap;overflow-wrap:anywhere}
+.dg-document .dg-diagram-detail{font-size:10.3pt;line-height:1.45;margin-top:1.8mm;white-space:pre-wrap;overflow-wrap:anywhere;color:#4d5b71}
+.dg-document .dg-diagram-connections{position:absolute;inset:0;color:var(--dg-primary);z-index:1;overflow:visible}
+.dg-document .dg-edge-label{position:absolute;z-index:3;max-width:32mm;padding:.5mm 1mm;background:#f1f4fa;color:var(--dg-primary);font-weight:700;font-size:8.5pt;line-height:1.2;text-align:center;transform:translate(-50%,-50%);white-space:pre-wrap;overflow-wrap:anywhere}
+.dg-document .dg-diagram-node:last-child{border-bottom:2px solid var(--dg-accent)}
+.dg-document .dg-diagram[data-layout="timeline"] .dg-diagram-node{border-left:3px solid var(--dg-accent)}
+.dg-document .dg-diagram[data-layout="hierarchy"] .dg-diagram-node{border-top:3px solid var(--dg-accent)}
+.dg-document .dg-cover-eyebrow{font-size:8pt;letter-spacing:.15em;font-weight:700;color:var(--dg-accent);margin-bottom:7mm}
+.dg-document .dg-cover-brand{font-size:13pt}
+.dg-document .dg-cover-standard{background-size:210mm 297mm;background-position:center;background-repeat:no-repeat}
+.dg-document .dg-cover-standard:before{display:none}
+.dg-document .dg-cover-standard .dg-cover-brand,.dg-document .dg-cover-standard .dg-cover-eyebrow{display:none}
+.dg-document .dg-cover-standard .dg-cover-main{position:absolute;left:20mm;right:20mm;top:48mm;height:72mm;max-height:72mm;margin:0!important;padding:0;border:0;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.dg-document .dg-cover-standard .dg-cover-title{font-size:38pt;line-height:1.12;margin-bottom:5mm;letter-spacing:-.025em}
+.dg-document .dg-cover-standard .dg-cover-subtitle{font-size:12pt;line-height:1.4;max-width:none}
+.dg-document .dg-cover-standard .dg-cover-author{position:absolute;left:20mm;right:20mm;bottom:7mm;font-size:8pt;text-align:center;color:#fff;text-shadow:0 1px 3px #000}
+
+.dg-document .dg-cover-main{margin:18mm 0}
+.dg-document .dg-cover-title{font-size:34pt;line-height:1.13;letter-spacing:-.03em}
+.dg-document .dg-cover-subtitle{max-width:148mm}
+.dg-document .dg-heading-l1{font-size:22pt;letter-spacing:-.025em}
+.dg-document .dg-heading-l2{font-size:14pt;line-height:1.35}
+.dg-document .dg-paragraph{line-height:1.58}
+.dg-document .dg-callout{border-radius:2.5mm;border:1px solid #d5dfec;border-left:3px solid var(--dg-accent);background:#f2f5fa;padding:4.5mm 5mm}
+.dg-document .dg-card{border-top:0;border-left:3px solid var(--dg-accent);border-radius:2.5mm;background:#f3f6fb}
+.dg-document .dg-table{font-size:9.3pt;line-height:1.5}
+.dg-document .dg-table th{padding:3mm;font-size:9.4pt}
+.dg-document .dg-table td{padding:3mm}
 `;

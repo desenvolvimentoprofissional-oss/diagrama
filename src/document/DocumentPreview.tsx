@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import type { DocumentProject, ReviewIssue } from '../../shared/document';
 import { paginateDocument } from './paginate';
-import { documentCss } from './styles';
+import { documentCss, diagramCss } from './styles';
+import { renderDiagram } from './diagrams';
 
 export type DocumentPreviewProps = {
   project:DocumentProject;
@@ -35,7 +36,7 @@ export function DocumentPreview({project,selectedId,onSelect,onLayout}:DocumentP
       await document.fonts.ready;
       const imageIssues=await preloadDocumentImages(project);
       if(stopped || !container.current)return;
-      const result=paginateDocument(container.current,project);
+      const result=paginateDocument(container.current,project,'/document/logo.png',renderDiagram);
       result.issues.push(...imageIssues);
       container.current.dataset.interactive='true';
       container.current.querySelectorAll('[data-block-id]').forEach(el=>{
@@ -50,7 +51,7 @@ export function DocumentPreview({project,selectedId,onSelect,onLayout}:DocumentP
       el.classList.toggle('dg-selected',(el as HTMLElement).dataset.blockId===selectedId);
     });
   },[selectedId,project]);
-  return <><style>{documentCss}</style><div ref={container} className="dg-document"
+  return <><style>{documentCss+diagramCss}</style><div ref={container} className="dg-document"
     onClick={event=>{
       const block=(event.target as HTMLElement).closest<HTMLElement>('[data-block-id]');
       if(block?.dataset.blockId)callbacks.current.onSelect?.(block.dataset.blockId);

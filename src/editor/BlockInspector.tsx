@@ -3,6 +3,7 @@ import { blockKinds, type DocumentBlock, type DocumentProject } from '../../shar
 import { blockLabels } from './labels';
 import { ImageUpload } from './ImageUpload';
 import { TableEditor } from './TableEditor';
+import { DiagramEditor } from './DiagramEditor';
 export function BlockInspector({ block, project, onChange, onMove, onDuplicate, onRemove, disabled }: {
   block: DocumentBlock; project: DocumentProject; onChange: (patch: Partial<DocumentBlock>) => void;
   onMove: (delta: number) => void; onDuplicate: () => void; onRemove: () => void; disabled: boolean;
@@ -11,12 +12,17 @@ export function BlockInspector({ block, project, onChange, onMove, onDuplicate, 
   const originals = project.source?.blocks.filter(item => block.sourceIds.includes(item.id)) || [];
   function changeKind(kind: DocumentBlock['kind']) {
     const patch: Partial<DocumentBlock> = { kind };
-    const content = block.text || block.items.map(item => [item.title, item.text].filter(Boolean).join('\n')).join('\n\n')
+    if (block.kind === 'diagram' && kind !== 'diagram') { patch.nodes=[]; patch.edges=[]; patch.layout='auto'; }
+    const content = block.text || block.nodes?.map(node => [node.label,node.detail].filter(Boolean).join('\n')).join('\n\n') || block.items.map(item => [item.title, item.text].filter(Boolean).join('\n')).join('\n\n')
       || block.rows.map(row => row.join(' | ')).join('\n') || block.caption;
     if (['heading', 'paragraph', 'list', 'callout'].includes(kind)) patch.text = content;
     if (kind === 'image' && !block.caption) patch.caption = content;
     if ((kind === 'cards' || kind === 'steps') && !block.items.length) {
       patch.items = [{ title: '', text: content }]; patch.text = '';
+    }
+    if (kind === 'diagram' && !block.nodes?.length) {
+      patch.nodes = [{id:crypto.randomUUID(),label:'',detail:content.slice(0,700),sourceIds:[...block.sourceIds]}];
+      patch.edges=[]; patch.layout='process'; patch.text=content.length>700?content:'';
     }
     if (kind === 'table' && !block.rows.length) { patch.rows = [[content, '']]; patch.text = ''; }
     onChange(patch);
@@ -33,14 +39,14 @@ export function BlockInspector({ block, project, onChange, onMove, onDuplicate, 
         <button type="button" className="dg-icon-button dg-danger" aria-label="Excluir componente" title="Excluir"
           onClick={onRemove}><Trash2 size={15} /></button>
       </div></div>
-    <label>Tipo de componente<select value={block.kind}
+    <label>Tipo de componente<select aria-label="Tipo de componente" value={block.kind}
       onChange={event => changeKind(event.target.value as DocumentBlock['kind'])}>
       {blockKinds.map(kind => <option key={kind} value={kind}>{blockLabels[kind]}</option>)}
     </select></label>
     {block.kind === 'heading' && <label>Nível do título<select value={block.level}
       onChange={event => onChange({ level: Number(event.target.value) })}>
       {[1, 2, 3, 4, 5, 6].map(level => <option key={level} value={level}>Nível {level}</option>)}</select></label>}
-    {block.kind !== 'image' && <label>{['cards', 'steps', 'table'].includes(block.kind) ? 'Título do componente (opcional)' : 'Texto'}
+    {block.kind !== 'image' && <label>{['cards', 'steps', 'table', 'diagram'].includes(block.kind) ? 'Título do componente (opcional)' : 'Texto'}
       <textarea rows={block.kind === 'paragraph' || block.kind === 'callout' ? 12 : 4}
         value={block.text} onChange={event => onChange({ text: event.target.value })} />
     </label>}
@@ -50,6 +56,7 @@ export function BlockInspector({ block, project, onChange, onMove, onDuplicate, 
         onChange={event => onChange({ caption: event.target.value })} /></label>
     </>}
     {block.kind === 'table' && <TableEditor rows={block.rows} onChange={rows => onChange({ rows })} />}
+    {block.kind === 'diagram' && <DiagramEditor block={block} project={project} onChange={onChange} />}
     {(block.kind === 'cards' || block.kind === 'steps') && <div className="dg-item-editor">
       {block.items.map((item, index) => <div className="dg-item-card" key={index}>
         <div className="dg-item-title"><span>{block.kind === 'steps' ? 'Etapa' : 'Card'} {index + 1}</span>
@@ -64,6 +71,10 @@ export function BlockInspector({ block, project, onChange, onMove, onDuplicate, 
         onClick={() => onChange({ items: [...block.items, { title: '', text: '' }] })}><Plus size={15} />
         {block.kind === 'steps' ? 'Adicionar etapa' : 'Adicionar card'}</button>
     </div>}
+    {(block.kind === 'cards' || block.kind === 'steps') && <label>Organização visual<select aria-label="Organização visual" value={block.layout || 'auto'}
+      onChange={event => onChange({layout:event.target.value as DocumentBlock['layout']})}>
+      <option value="auto">Automática</option><option value="grid">Em colunas</option>
+      <option value="process">Em sequência</option><option value="comparison">Comparação</option></select></label>}
     <label className="dg-switch"><span>Iniciar em nova página</span><input type="checkbox" checked={block.breakBefore}
       onChange={event => onChange({ breakBefore: event.target.checked })} /><span className="dg-switch-track" /></label>
     {originals.length > 0 && <details className="dg-source-details"><summary><FileCheck2 size={14} />Consultar texto de origem</summary>

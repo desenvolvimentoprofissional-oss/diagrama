@@ -1,4 +1,4 @@
-import type { DocumentProject } from '../../shared/document';
+import { themeSchema, type DocumentProject } from '../../shared/document';
 import { ImageUpload } from './ImageUpload';
 export function DocumentSettings({ project, onChange, disabled }: {
   project: DocumentProject; onChange: (patch: Partial<DocumentProject>) => void; disabled: boolean;
@@ -24,12 +24,18 @@ export function DocumentSettings({ project, onChange, disabled }: {
       <output>{project.theme.fontSize} pt</output></div></label>
     <small className="dg-help">A4 · fonte Libre Franklin · paginação automática</small>
     <div className="dg-section-heading"><span>Identidade visual</span></div>
+    <p className="dg-help">O padrão CRA-SP já está aplicado. O logo institucional aparece automaticamente; envie outro apenas para substituí-lo.</p>
     <div className="dg-color-fields">
       <label>Cor principal<div className="dg-color-input"><input type="color" value={project.theme.primary}
         onChange={event => theme({ primary: event.target.value })} /><code>{project.theme.primary}</code></div></label>
       <label>Cor de destaque<div className="dg-color-input"><input type="color" value={project.theme.accent}
         onChange={event => theme({ accent: event.target.value })} /><code>{project.theme.accent}</code></div></label>
     </div>
-    <ImageUpload label="Logotipo" value={project.theme.logo} onChange={logo => theme({ logo })} disabled={disabled} />
+    {!project.theme.logo && project.theme.organization.trim().toUpperCase()==='CRA-SP' && <div className="dg-active-logo">
+      <img src="/document/logo.png" alt="Logo CRA-SP"/><div><strong>Logo CRA-SP automático</strong>
+        <span>Incluído na capa e nos cabeçalhos.</span></div></div>}
+    <button type="button" className="dg-text-button dg-restore-design" onClick={()=>onChange({theme:themeSchema.parse({})})}>
+      Restaurar padrão CRA-SP</button>
+    <ImageUpload label="Substituir logotipo (opcional)" value={project.theme.logo} onChange={logo => theme({ logo })} disabled={disabled} />
   </fieldset>;
 }

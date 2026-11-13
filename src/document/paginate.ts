@@ -1,9 +1,11 @@
 import type { DocumentProject, ReviewIssue } from '../../shared/document';
+import {renderDiagram} from './diagrams';
 
 export type LayoutResult = { pageCount:number; issues:ReviewIssue[] };
 
 /** Browser function kept self-contained: the identical code paginates preview and PDF. */
-export function paginateDocument(root: HTMLElement, project: DocumentProject, defaultLogo = '/document/logo.png'): LayoutResult {
+export function paginateDocument(root: HTMLElement, project: DocumentProject, defaultLogo = '/document/logo.png', renderGraph?: (parent:HTMLElement,block:DocumentProject['blocks'][number])=>HTMLElement, defaultCover='/design-reference/cover-art.jpg'): LayoutResult {
+  if(!renderGraph&&typeof renderDiagram!=='undefined')renderGraph=renderDiagram;
   type Block = DocumentProject['blocks'][number];
   const doc = root.ownerDocument;
   const issues: ReviewIssue[] = [];
@@ -35,11 +37,18 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
     header.append(node('span','',project.title), node('span','dg-header-rule')); brand(header);
     const inner = node('div','dg-body');
     const footer = node('footer','dg-footer');
-    footer.append(node('span','dg-page-number'),node('span','dg-footer-label',project.theme.organization));
+    footer.append(node('span','dg-page-number'),node('span','dg-footer-label',project.theme.organization.trim().toUpperCase()==='CRA-SP'?'Rua Estados Unidos, 889 · Jardim América · São Paulo/SP\nwww.crasp.gov.br · (11) 3087-3200':project.theme.organization));
     el.append(header,inner,footer); root.append(el); pages.push(el);
     return inner;
   }
-  function next(): void { body = page(); }
+  function next(): void {
+    const carry:HTMLElement[]=[];let height=0;
+    let previous=body?.lastElementChild as HTMLElement|undefined;
+    while(previous?.classList.contains('dg-heading')&&height+previous.offsetHeight<240){
+      height+=previous.offsetHeight;carry.unshift(previous);previous.remove();previous=body?.lastElementChild as HTMLElement|undefined;
+    }
+    body=page();for(const heading of carry)body.append(heading);
+  }
   function fits(): boolean {
     const boundary = body.getBoundingClientRect().bottom;
     const last = body.lastElementChild;
@@ -52,6 +61,8 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
   }
   function mark(el:HTMLElement,b:Block): void {
     el.dataset.blockId = b.id;
+    el.dataset.fragmentKind = b.kind;
+    el.dataset.level = String(b.level);
     if (!doc.getElementById(`dg-block-${b.id}`)) el.id = `dg-block-${b.id}`;
   }
   function warning(message:string,b?:Block): void {
@@ -83,7 +94,8 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
       const el = node(kind === 'heading' ? `h${Math.min(6,b.level+1)}` : 'div', `dg-block dg-${kind}${kind === 'heading' ? ` dg-heading-l${b.level}` : ''}`);
       if (kind === 'heading') ensureSpace(95);
       else ensureSpace(44);
-      mark(el,b); body.append(el); el.textContent = rest;
+      mark(el,b); el.dataset.fragmentKind=kind;
+      if(kind==='heading'&&b.kind==='diagram'){el.classList.add('dg-component-heading');el.dataset.role='component-title';el.dataset.level='2';} body.append(el); el.textContent = rest;
       if (fits()) break;
       if (body.childElementCount > 1 && kind === 'heading') {
         el.remove(); next(); body.append(el);
@@ -104,7 +116,7 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
     if (b.text) text({...b,kind:'heading',level:2},b.text,'heading');
     if(b.kind==='cards' && b.items.length>1 && b.items.every(item=>item.title.length<=140 && item.text.length<=800)){
       for(let index=0;index<b.items.length;index+=2){
-        const row=node('div','dg-cards-row');mark(row,b);
+        const row=node('div','dg-cards-row');mark(row,b);row.dataset.itemStart=String(index);
         for(const item of b.items.slice(index,index+2)){
           const card=node('div','dg-card');card.append(node('div','dg-card-title',item.title),node('div','dg-card-text',item.text));row.append(card);
         }
@@ -119,6 +131,7 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
       while (again) {
         ensureSpace(100);
         const card = node('div',b.kind === 'steps' ? `dg-step${index===b.items.length-1?' dg-step-last':''}` : 'dg-card'); mark(card,b);
+        card.dataset.itemStart=String(index);
         const inner = node('div',b.kind === 'steps' ? 'dg-step-content' : '');
         const heading = node('div','dg-card-title',title);
         const para = node('div','dg-card-text',rest);
@@ -179,20 +192,25 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
   }
   if (project.cover) {
     const cover = node('section','document-page dg-cover');
+    const institutional=project.theme.organization.trim().toUpperCase()==='CRA-SP'&&!project.theme.logo&&project.theme.primary.toLowerCase()==='#183364'&&project.subtitle.length<=280;
+    if(institutional){cover.classList.add('dg-cover-standard');cover.style.backgroundImage=`url("${defaultCover}")`;}
+
     const top = node('div','dg-cover-brand',project.theme.organization);
     if (logo) {const logoImage=doc.createElement('img');logoImage.className='dg-cover-logo';logoImage.src=logo;logoImage.alt=project.theme.organization;top.append(logoImage);}
     const main = node('div','dg-cover-main');
+    main.append(node('div','dg-cover-eyebrow','DOCUMENTO INSTITUCIONAL'));
     const title = node('h1','dg-cover-title',project.title);
     if (project.title.length > 140) title.style.fontSize='26pt';
+    if(institutional&&project.title.length>90)title.style.fontSize='30pt';
     main.append(title,node('p','dg-cover-subtitle',project.subtitle));
     const author=node('div','dg-cover-author',project.author);
     cover.append(top,main,author);root.append(cover); pages.push(cover);
     const subtitle=main.querySelector<HTMLElement>('.dg-cover-subtitle')!;
     for(let size=30;size>=20;size-=2){
-      if(cover.scrollHeight<=cover.clientHeight+1 && main.getBoundingClientRect().bottom<=author.getBoundingClientRect().top)break;
+      if(cover.scrollHeight<=cover.clientHeight+1&&main.scrollHeight<=main.clientHeight+1&&main.getBoundingClientRect().bottom<=author.getBoundingClientRect().top)break;
       title.style.fontSize=`${size}pt`;subtitle.style.fontSize=`${Math.max(11,size/2-1)}pt`;main.style.margin='5mm 0';
     }
-    if(cover.scrollHeight>cover.clientHeight+1)issues.push({severity:'error',message:'O título e os dados de capa excedem a página. Encurte os dados de apresentação.',page:1});
+    if(cover.scrollHeight>cover.clientHeight+1||main.scrollHeight>main.clientHeight+1||main.getBoundingClientRect().bottom>author.getBoundingClientRect().top+.5)issues.push({severity:'error',message:'O título e os dados de capa excedem a página. Encurte os dados de apresentação.',page:1});
   }
   next();
   if (!project.blocks.length) body.append(node('div','dg-empty','Importe um documento ou adicione o primeiro componente para começar.'));
@@ -204,7 +222,22 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
       if (b.level <= 2) headingPages.push({id:b.id,text:b.text,level:b.level,page:pages.findIndex(page=>Boolean(anchor&&page.contains(anchor)))+1});
     } else if (b.kind === 'table') table(b);
     else if (b.kind === 'cards' || b.kind === 'steps') cards(b);
+    else if (b.kind === 'diagram') {
+      const graphIds=new Set((b.nodes||[]).map(node=>node.id));
+      if(!graphIds.size||graphIds.size!==(b.nodes||[]).length||(b.edges||[]).some(edge=>!graphIds.has(edge.from)||!graphIds.has(edge.to)))
+        issues.push({severity:'error',blockId:b.id,page:pages.length,message:'O infográfico contém elementos ausentes, repetidos ou conexões sem destino válido.'});
+      if(b.text)text(b,b.text,'heading');
+      if(!renderGraph){issues.push({severity:'error',blockId:b.id,message:'O mecanismo de infográficos não está disponível.'});continue;}
+      ensureSpace(160);
+      const figure=renderGraph(body,b);mark(figure,b);
+      if(!fits()&&body.childElementCount>1){figure.remove();next();body.append(figure);}
+      if(!fits())issues.push({severity:'error',blockId:b.id,page:pages.length,
+        message:'O infográfico é extenso para uma página. Divida etapas ou apresente os detalhes no texto de apoio.'});
+      if((b.nodes||[]).some(node=>node.label.length>100||node.detail.length>350))
+        warning('Há textos longos nos elementos do infográfico. Confira a leitura e transfira detalhes ao texto de apoio quando necessário.',b);
+    }
     else if (b.kind === 'image') {
+      if(b.text)text({...b,kind:'paragraph'},b.text,'paragraph');
       if (!safeImage(b.image)) {warning('Imagem ausente ou em formato não suportado para exportação.',b); if(b.caption)text(b,b.caption,'paragraph');continue;}
       const figure=node('figure','dg-figure');mark(figure,b);
       const image=doc.createElement('img');image.src=b.image;image.alt=b.caption;figure.append(image);
@@ -214,6 +247,18 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
       if(b.caption)text(b,b.caption,'caption');
     } else text(b,b.text);
     if(b.caption && b.kind!=='image')text(b,b.caption,'caption');
+  }
+  // Carrying a heading to the next page must not leave an empty physical sheet.
+  for(let index=pages.length-1;index>=0;index--){
+    const area=pages[index].querySelector('.dg-body');
+    if(area&&!area.childElementCount){
+      pages[index].remove();pages.splice(index,1);
+      for(const issue of issues)if(issue.page&&issue.page>index+1)issue.page--;
+    }
+  }
+  for(const heading of headingPages){
+    const anchor=doc.getElementById(`dg-block-${heading.id}`);
+    heading.page=pages.findIndex(page=>Boolean(anchor&&page.contains(anchor)))+1;
   }
   // Images are decoded by the caller before measurement. TOC is inserted after content pagination.
   if (project.toc && headingPages.length) {
@@ -231,6 +276,7 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
     const before=contentPages[project.cover?1:0];
     tocPages.forEach(el=>root.insertBefore(el,before));
     const firstTocIndex=project.cover?1:0;
+    for(const issue of issues)if(issue.page&&issue.page>firstTocIndex)issue.page+=tocPages.length;
     headingPages.forEach((heading,i)=>{
       const anchor=tocPages.flatMap(p=>[...p.querySelectorAll('.dg-toc-row')])[i];
       if(anchor?.lastElementChild)anchor.lastElementChild.textContent=String(heading.page+tocPages.length);
@@ -250,6 +296,51 @@ export function paginateDocument(root: HTMLElement, project: DocumentProject, de
         return bounds.bottom>boundary.bottom+.5*scale || bounds.right>boundary.right+.5*scale || bounds.left<boundary.left-.5*scale;
       });
       if(invalid)issues.push({severity:'error',message:'Conteúdo ultrapassa a área útil da página.',page:index+1});
+    }
+  });
+  const orderedPages=[...root.children] as HTMLElement[];
+  orderedPages.forEach((page,index)=>{
+    const area=page.querySelector<HTMLElement>('.dg-body');if(!area)return;
+    const children=[...area.children] as HTMLElement[];
+    const last=children.at(-1);
+    if(last?.classList.contains('dg-heading'))issues.push({severity:'error',page:index+1,blockId:last.dataset.blockId,
+      message:'Um título ficou isolado no final da página.'});
+    const areaBounds=area.getBoundingClientRect();
+    for(let childIndex=0;childIndex<children.length;childIndex++){
+      const child=children[childIndex],bounds=child.getBoundingClientRect();
+      if(childIndex&&bounds.top<children[childIndex-1].getBoundingClientRect().bottom-.5)
+        issues.push({severity:'error',page:index+1,blockId:child.dataset.blockId,message:'Há componentes sobrepostos na página.'});
+      if(child.classList.contains('dg-diagram')){
+        const diagramBounds=child.getBoundingClientRect();
+        const nodes=[...child.querySelectorAll<HTMLElement>('.dg-diagram-node')];
+        for(let nodeIndex=0;nodeIndex<nodes.length;nodeIndex++){
+          const rectangle=nodes[nodeIndex].getBoundingClientRect();
+          if(rectangle.left<diagramBounds.left-.5||rectangle.right>diagramBounds.right+.5||rectangle.bottom>diagramBounds.bottom+.5)
+            issues.push({severity:'error',page:index+1,blockId:child.dataset.blockId,message:'Uma etapa ultrapassa os limites do infográfico.'});
+          if(nodes.slice(nodeIndex+1).some(other=>{const candidate=other.getBoundingClientRect();
+            return Math.min(rectangle.right,candidate.right)-Math.max(rectangle.left,candidate.left)>1&&
+              Math.min(rectangle.bottom,candidate.bottom)-Math.max(rectangle.top,candidate.top)>1;}))
+            issues.push({severity:'error',page:index+1,blockId:child.dataset.blockId,message:'Há etapas sobrepostas no infográfico.'});
+        }
+        for(const label of child.querySelectorAll<HTMLElement>('.dg-edge-label')){
+          const rectangle=label.getBoundingClientRect();
+          if(nodes.some(other=>{const candidate=other.getBoundingClientRect();
+            return Math.min(rectangle.right,candidate.right)-Math.max(rectangle.left,candidate.left)>2&&
+              Math.min(rectangle.bottom,candidate.bottom)-Math.max(rectangle.top,candidate.top)>2;}))
+            issues.push({severity:'warning',page:index+1,blockId:child.dataset.blockId,message:'O rótulo de uma conexão se sobrepõe a uma etapa do infográfico.'});
+        }
+      }
+      for(const textElement of child.querySelectorAll<HTMLElement>('.dg-card-text,.dg-diagram-label,.dg-diagram-detail,.dg-edge-label')){
+        if(textElement.scrollHeight>textElement.clientHeight+1||textElement.scrollWidth>textElement.clientWidth+1)
+          issues.push({severity:'error',page:index+1,blockId:child.dataset.blockId,message:'Há texto cortado dentro de um componente.'});
+      }
+    }
+    if(children.length&&index<orderedPages.length-1&&!page.querySelector('.dg-toc-title')){
+      const used=(last!.getBoundingClientRect().bottom-areaBounds.top)/areaBounds.height;
+      const nextArea=orderedPages[index+1].querySelector('.dg-body');
+      const nextFirst=nextArea?.firstElementChild;
+      if(used<.23&&nextFirst&&(nextFirst as HTMLElement).dataset.blockId===last!.dataset.blockId&&last!.classList.contains('dg-paragraph'))
+        issues.push({severity:'warning',page:index+1,message:'A página está pouco ocupada. Confira se a quebra é necessária à apresentação.'});
     }
   });
   return {pageCount:root.childElementCount,issues};

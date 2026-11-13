@@ -1,9 +1,10 @@
 import type { DocumentProject, ReviewIssue } from '../../shared/document';
+import type { GenerationProgress, QualityReport } from '../../shared/generation';
 export type EditorProps = {
   project: DocumentProject;
   onChange: (project: DocumentProject) => void;
   busy: boolean;
-  onImport: (file: File) => void;
+  onImport: (file: File, instructions?:string) => void;
   onGenerate: (instructions: string) => void;
   onExport: (format: 'pdf' | 'docx') => void;
   onReview: () => void;
@@ -19,4 +20,6 @@ export type EditorProps = {
   onCancel?: () => void;
   onSaveCopy?: () => void;
   saveCopyEnabled?: boolean;
+  progress?: GenerationProgress;
+  report?: QualityReport;
 };

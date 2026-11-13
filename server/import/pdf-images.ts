@@ -1,7 +1,7 @@
 import { createCanvas, ImageData } from '@napi-rs/canvas';
 import type { PDFPageProxy } from 'pdfjs-dist';
 
-export type PlacedImage = {x:number; y:number; image:string};
+export type PlacedImage = {x:number; y:number; width:number; height:number; image:string};
 type Matrix = [number,number,number,number,number,number];
 const identity: Matrix = [1,0,0,1,0,0];
 function multiply(a: Matrix, b: Matrix): Matrix {
@@ -55,7 +55,8 @@ export async function extractPdfImages(page: PDFPageProxy, ops: Record<string,nu
         }
         bytes+=image.length;
         if (bytes>18_000_000 || images.length>=100) throw new Error('image-limit');
-        images.push({x:matrix[4],y:Math.max(matrix[5],matrix[5]+matrix[3]),image});
+        images.push({x:matrix[4],y:Math.max(matrix[5],matrix[5]+matrix[3]),
+          width:Math.hypot(matrix[0],matrix[1]),height:Math.hypot(matrix[2],matrix[3]),image});
       } catch {
         warnings.push(`Uma imagem da página ${page.pageNumber} exige conferência com o PDF original.`);
       }

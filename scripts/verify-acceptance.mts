@@ -1,0 +1,25 @@
+import {readFile,writeFile,mkdtemp} from 'node:fs/promises';
+import path from 'node:path';
+import {tmpdir} from 'node:os';
+import {fileURLToPath} from 'node:url';
+import {projectSchema} from '../shared/document.ts';
+import {auditProject} from '../shared/integrity.ts';
+import {validatedProject} from '../server/validation.ts';
+import {exportPdf,inspectDocument} from '../server/export/browser.ts';
+import {exportDocx} from '../server/export/docx.ts';
+import {proofWord} from '../server/export/word-proof.ts';
+const directory=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../docs/validacao');
+const project=validatedProject(projectSchema.parse(JSON.parse(await readFile(path.join(directory,'cursos-trilhas.project.json'),'utf8'))));
+const integrity=auditProject(project);
+if(integrity.some(issue=>issue.severity==='error'))throw new Error('Divergência na cobertura da origem.');
+const output=await mkdtemp(path.join(tmpdir(),'diagrama-acceptance-'));
+const layout=await inspectDocument(project);
+if(layout.issues.some(issue=>issue.severity==='error'))throw new Error('Problema na composição PDF.');
+await writeFile(path.join(output,'cursos-trilhas.pdf'),await exportPdf(project));
+const word=await proofWord(project);
+await writeFile(path.join(output,'cursos-trilhas.docx'),word.document??await exportDocx(project));
+const report={sourceBlocks:project.source!.blocks.length,sourceCoverage:new Set(project.blocks.flatMap(block=>block.sourceIds)).size,
+  integrity,layout:{pages:layout.pages,issues:layout.issues},word:{available:word.available,completed:word.completed,pages:word.pages,issues:word.issues}};
+await writeFile(path.join(output,'report.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify({output,...report},null,2));
+if(word.available&&(!word.completed||word.issues.some(issue=>issue.severity==='error')))process.exitCode=1;

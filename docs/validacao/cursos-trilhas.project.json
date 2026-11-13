@@ -1,0 +1,2621 @@
+{
+  "schemaVersion": 1,
+  "id": "4567f09d-52b8-4131-8a00-95345bfa76b2",
+  "title": "Cursos Livres e Trilhas de Aprendizagem",
+  "subtitle": "Participação institucional no Programa de Desenvolvimento Profissional\nGuia explicativo do regulamento e do acordo de cooperação",
+  "author": "CRA-SP · Inovação e Desenvolvimento Profissional",
+  "mode": "explanatory",
+  "source": {
+    "name": "minuta-resolucao-instituicoes-cursos-livres-trilhas-aprendizagem.docx",
+    "format": "docx",
+    "sha256": "7608cf75ace126cbdcba17cf4c2ae606c4f82527864a306fcfecd08b69d26126",
+    "blocks": [
+      {
+        "id": "s-00001",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00001"
+        ],
+        "text": "CONSELHO REGIONAL DE ADMINISTRAÇÃO DE SÃO PAULO",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00002",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00002"
+        ],
+        "text": "RESOLUÇÃO NORMATIVA CRA-SP Nº [NÚMERO], DE [DIA] DE [MÊS] DE [ANO]",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00003",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00003"
+        ],
+        "text": "Regulamenta a seleção e a participação de instituições nos Eixos de Cursos Livres e Trilhas de Aprendizagem do Programa de Desenvolvimento Profissional do CRA-SP.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00004",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00004"
+        ],
+        "text": "O PLENÁRIO DO CONSELHO REGIONAL DE ADMINISTRAÇÃO DE SÃO PAULO (CRA-SP), no uso das atribuições que lhe conferem a Lei nº 4.769, de 9 de setembro de 1965, regulamentada pelo Decreto nº 61.934, de 22 de dezembro de 1967, e os arts. 24 e 25, inciso XXXII, do Regimento Interno do CRA-SP, aprovado pela Resolução Normativa CFA nº 658, de 23 de dezembro de 2024;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00005",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00005"
+        ],
+        "text": "CONSIDERANDO o art. 26, inciso I, da Resolução Normativa CRA-SP nº [NÚMERO DA RESOLUÇÃO GERAL DO PROGRAMA], que prevê regulamento complementar para a participação institucional nos Cursos Livres e nas Trilhas de Aprendizagem gratuitos;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00006",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00006"
+        ],
+        "text": "CONSIDERANDO o deliberado pelo Plenário do CRA-SP na [NÚMERO DA PLENÁRIA], realizada em [DATA DA APROVAÇÃO].",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00007",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00007"
+        ],
+        "text": "RESOLVE:",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00008",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00008"
+        ],
+        "text": "CAPÍTULO I\nDO OBJETO E DA PARTICIPAÇÃO",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00009",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00009"
+        ],
+        "text": "Art. 1º Esta Resolução regulamenta a seleção e a participação de instituições nos Eixos de Cursos Livres e Trilhas de Aprendizagem do Programa de Desenvolvimento Profissional, em complemento à Resolução Normativa CRA-SP nº [NÚMERO DA RESOLUÇÃO GERAL DO PROGRAMA].",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00010",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00010"
+        ],
+        "text": "§ 1º Poderão apresentar propostas instituições de educação superior, associações, federações, órgãos e entidades públicos e outras pessoas jurídicas com atuação compatível, mediante recebimento contínuo, sem exclusividade ou classificação competitiva entre instituições.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00011",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00011"
+        ],
+        "text": "§ 2º O CRA-SP atuará como conector, divulgando as ofertas aceitas e orientando o acesso. As regras dos Cursos Livres alcançam também sua divulgação por outros canais institucionais do Conselho.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00012",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00012"
+        ],
+        "text": "CAPÍTULO II\nDOS CRITÉRIOS DE ACEITAÇÃO",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00013",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00013"
+        ],
+        "text": "Art. 2º São condições obrigatórias para a aceitação:",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00014",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00014"
+        ],
+        "text": "I — constituição ou criação regular da instituição, representação válida e inexistência de impedimento legal aplicável à cooperação;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00015",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00015"
+        ],
+        "text": "II — ofertas vinculadas às áreas da Administração, identificadas por título, objetivos, ementa e carga horária, com coerência entre o conteúdo e a formação anunciada;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00016",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00016"
+        ],
+        "text": "III — gratuidade de matrícula, acesso, conteúdos e materiais obrigatórios, atividades, avaliação e emissão, disponibilização e validação dos certificados;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00017",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00017"
+        ],
+        "text": "IV — indicação do público e dos requisitos da oferta, do ambiente virtual da instituição ou do CRA-SP e das condições de acesso e acessibilidade, com descrição dos recursos e da equipe para execução e atendimento e identificação dos responsáveis e canais acadêmicos e tecnológicos;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00018",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00018"
+        ],
+        "text": "V — regras de avaliação, aproveitamento mínimo, conclusão e emissão dos certificados identificadas na oferta ou na fonte oficial;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00019",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00019"
+        ],
+        "text": "VI — declaração de titularidade ou de autorização para os usos propostos dos conteúdos e identificação das responsabilidades de execução.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00020",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00020"
+        ],
+        "text": "§ 1º A formação anunciada deverá poder ser concluída integralmente sem pagamento, vedada a gratuidade de etapa inicial cuja continuidade necessária dependa da aquisição de produto ou serviço.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00021",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00021"
+        ],
+        "text": "§ 2º Nas Trilhas, serão identificadas as unidades formativas, a sequência pedagógica, os conteúdos e as cargas horárias, com avaliação e emissão de certificados por unidade, pela trilha completa ou por ambas, conforme a oferta.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00022",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00022"
+        ],
+        "text": "CAPÍTULO III\nDA SOLICITAÇÃO, DA ANÁLISE E DA APROVAÇÃO",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00023",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00023"
+        ],
+        "text": "Art. 3º A instituição encaminhará a presidencia@crasp.gov.br sua identificação, natureza jurídica, CNPJ, ato constitutivo ou de criação, poderes do representante, responsáveis e contatos, acompanhados das ofertas e das evidências dos critérios do art. 2º e de declaração de concordância com os regulamentos e de gratuidade integral.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00024",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00024"
+        ],
+        "text": "§ 1º As ofertas poderão ser apresentadas individualmente, por lista ou por endereço eletrônico de catálogo oficial, com delimitação do escopo. A fonte indicada poderá suprir os dados de cada oferta, sem reapresentação individual das informações suficientes à análise.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00025",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00025"
+        ],
+        "text": "§ 2º A autorização poderá abranger ofertas existentes e futuras do catálogo, desde que isso conste do escopo aprovado e sejam preservados os critérios e as condições da cooperação.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00026",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00026"
+        ],
+        "text": "§ 3º Não serão exigidos da instituição Plano de Trabalho e Cronograma Físico-Financeiro autônomos nesta cooperação gratuita e sem transferência de recursos, conforme o art. 28, § 1º, da resolução geral do Programa.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00027",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00027"
+        ],
+        "text": "§ 4º A página do Programa manterá disponíveis este Regulamento, a minuta do acordo e as orientações para encaminhamento das manifestações de interesse à Presidência.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00028",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00028"
+        ],
+        "text": "Art. 4º A análise e a aprovação da proposta obedecerão às seguintes etapas:",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00029",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00029"
+        ],
+        "text": "I — a Presidência receberá a proposta e a encaminhará à área gestora do Programa;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00030",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00030"
+        ],
+        "text": "II — a Gerência de Inovação e Desenvolvimento Profissional verificará a documentação e os critérios do art. 2º, registrará as evidências e concluirá a análise;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00031",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00031"
+        ],
+        "text": "III — o Diretor de Formação Profissional emitirá parecer conclusivo sobre a proposta, o escopo e as condições de participação;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00032",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00032"
+        ],
+        "text": "IV — a Diretoria Executiva apreciará a proposta e, após sua aprovação, a encaminhará ao Plenário;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00033",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00033"
+        ],
+        "text": "V — o Plenário deliberará sobre a participação da instituição, as ofertas e as condições da cooperação;",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00034",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00034"
+        ],
+        "text": "VI — a Presidência formalizará a cooperação aprovada e promoverá a publicação do instrumento.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00035",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00035"
+        ],
+        "text": "§ 1º A análise identificará, por critério, a evidência examinada e o atendimento, o não atendimento ou a pendência. A solicitação de complementação indicará os elementos faltantes e o prazo de resposta.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00036",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00036"
+        ],
+        "text": "§ 2º O objeto social e as atividades efetivamente exercidas serão examinados. Havendo indícios de atividade básica ou de serviços a terceiros sujeitos a registro no CRA-SP, será solicitada manifestação da área de Fiscalização e Registro sobre o enquadramento e a regularidade exigível, sem presumir a obrigação pela mera apresentação da proposta.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00037",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00037"
+        ],
+        "text": "§ 3º Após a decisão de mérito, a instituição receberá comunicação com os fundamentos do indeferimento ou a identificação das ofertas, do escopo e das condições aprovados. Somente a cooperação aprovada será formalizada, e a divulgação das ofertas dependerá da assinatura do acordo.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00038",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00038"
+        ],
+        "text": "CAPÍTULO IV\nDA FORMALIZAÇÃO E DA EXECUÇÃO DA COOPERAÇÃO",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00039",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00039"
+        ],
+        "text": "Art. 5º A cooperação será formalizada por Acordo de Cooperação Técnica, conforme a minuta do Anexo I, assinado pelo Presidente do CRA-SP e pelo representante habilitado da instituição, com quadro das ofertas ou do catálogo, ambiente de realização, atribuições acadêmicas e tecnológicas e usos autorizados dos conteúdos.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00040",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00040"
+        ],
+        "text": "§ 1º As cláusulas poderão ser adequadas às características da oferta e às necessidades das partes, após análise e aprovação, sem afastar os critérios deste Regulamento. Condições não previstas no modelo serão examinadas antes da assinatura.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00041",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00041"
+        ],
+        "text": "§ 2º Não haverá transferência de recursos financeiros nem remuneração entre as partes.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00042",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00042"
+        ],
+        "text": "§ 3º A autorização para divulgar catálogo não autoriza, por si só, reproduzir, adaptar ou disponibilizar aulas e avaliações no ambiente do CRA-SP. Esses usos dependerão de autorização expressa do titular, com indicação dos materiais, ambientes, prazo e limites.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00043",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00043"
+        ],
+        "text": "CAPÍTULO V\nDAS ATUALIZAÇÕES E DO ENCERRAMENTO",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00044",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00044"
+        ],
+        "text": "Art. 6º As atualizações cadastrais, informativas ou de execução que preservem o objeto, o escopo e as condições aprovados serão verificadas e registradas pela área gestora do Programa, sob supervisão técnica do Diretor de Formação Profissional, com indicação da fonte, da data e da alteração, sem nova aprovação colegiada.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00045",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00045"
+        ],
+        "text": "§ 1º A inclusão, atualização ou retirada de registros do catálogo autorizado poderá decorrer de informação da instituição ou de consulta do CRA-SP à fonte oficial, inclusive quanto a ofertas futuras expressamente abrangidas pela autorização.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00046",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00046"
+        ],
+        "text": "§ 2º Dúvidas serão tratadas por consulta à instituição e análise técnica simplificada. O item com pendência sobre o atendimento aos critérios somente será divulgado após esclarecimento.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00047",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00047"
+        ],
+        "text": "§ 3º Novas ofertas fora do escopo e alterações do objeto ou das condições determinantes da aprovação seguirão as etapas do art. 4º e serão formalizadas antes de sua divulgação. A atualização operacional não prorrogará o acordo.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00048",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00048"
+        ],
+        "text": "Art. 7º O acordo terá vigência determinada. Sua prorrogação dependerá de avaliação do cumprimento das obrigações, da regularidade institucional e da manutenção das condições aprovadas, concordância das partes e aprovação e formalização pelo procedimento do art. 4º, antes do término.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00049",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00049"
+        ],
+        "text": "§ 1º O encerramento poderá decorrer do término da vigência, consenso, solicitação de uma das partes, descumprimento ou interesse público motivado, com comunicação no prazo pactuado. O encerramento por decisão do CRA-SP observará o mesmo procedimento de aprovação, asseguradas a manifestação da instituição e a motivação.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00050",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00050"
+        ],
+        "text": "§ 2º Identificado descumprimento, a instituição será comunicada para esclarecimento e correção, quando cabível, em prazo formalmente informado.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00051",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00051"
+        ],
+        "text": "§ 3º Serão definidas as providências de continuidade e atendimento aos participantes em formação, preservadas a gratuidade, as responsabilidades acadêmicas e os registros e certificados das atividades concluídas.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00052",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00052"
+        ],
+        "text": "§ 4º A instituição comunicará à Presidência alterações, indisponibilidades e descumprimentos, com as providências propostas; os riscos aos participantes serão comunicados imediatamente. As medidas urgentes observarão o art. 24, § 4º, da resolução geral do Programa.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00053",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00053"
+        ],
+        "text": "CAPÍTULO VI\nDAS DISPOSIÇÕES FINAIS",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00054",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00054"
+        ],
+        "text": "Art. 8º Os casos omissos observarão o art. 40 da resolução geral do Programa.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00055",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00055"
+        ],
+        "text": "Art. 9º Esta Resolução e seu Anexo I serão disponibilizados na página do Programa. Esta Resolução entra em vigor na data de sua publicação.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00056",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00056"
+        ],
+        "text": "[NOME DA AUTORIDADE SIGNATÁRIA]\n[REGISTRO PROFISSIONAL]\nPresidente do CRA-SP",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00057",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00057"
+        ],
+        "text": "ANEXO I\nDA MINUTA DE ACORDO DE COOPERAÇÃO TÉCNICA",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": true
+      },
+      {
+        "id": "s-00058",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00058"
+        ],
+        "text": "ACORDO DE COOPERAÇÃO TÉCNICA Nº [NÚMERO DO ACORDO]",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00059",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00059"
+        ],
+        "text": "O CONSELHO REGIONAL DE ADMINISTRAÇÃO DE SÃO PAULO — CRA-SP, autarquia federal, inscrito no CNPJ sob nº [CNPJ DO CRA-SP], com sede em [ENDEREÇO DO CRA-SP], representado por seu Presidente, [NOME E QUALIFICAÇÃO], e [DENOMINAÇÃO DA INSTITUIÇÃO], [NATUREZA JURÍDICA], inscrita no CNPJ sob nº [CNPJ DA INSTITUIÇÃO], com sede em [ENDEREÇO DA INSTITUIÇÃO], representada por [NOME, CARGO E PODERES DE REPRESENTAÇÃO], doravante denominada INSTITUIÇÃO PARTICIPANTE, celebram o presente acordo com fundamento na Resolução Normativa CRA-SP nº [NÚMERO DA RESOLUÇÃO DE CURSOS LIVRES E TRILHAS DE APRENDIZAGEM] e na Resolução Normativa CRA-SP nº [NÚMERO DA RESOLUÇÃO GERAL DO PROGRAMA], mediante as cláusulas seguintes.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00060",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00060"
+        ],
+        "text": "CLÁUSULA PRIMEIRA\nDO OBJETO",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00061",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00061"
+        ],
+        "text": "1.1. O objeto é a cooperação para divulgação e oferta gratuita de Cursos Livres, Trilhas de Aprendizagem ou ambos, conforme o processo administrativo nº [NÚMERO DO PROCESSO] e o quadro a seguir.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00062",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00062"
+        ],
+        "text": "QUADRO DAS OFERTAS E CONDIÇÕES",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00063",
+        "kind": "table",
+        "sourceIds": [
+          "s-00063"
+        ],
+        "text": "",
+        "level": 1,
+        "rows": [
+          [
+            "CAMPO",
+            "CONDIÇÃO ACORDADA"
+          ],
+          [
+            "Escopo autorizado",
+            "[EIXOS E OFERTAS; APENAS ITENS IDENTIFICADOS OU TAMBÉM OFERTAS FUTURAS DO CATÁLOGO]"
+          ],
+          [
+            "Fonte oficial",
+            "[LISTA OU ENDEREÇO ELETRÔNICO, DELIMITAÇÃO DO CATÁLOGO E DATA DE REFERÊNCIA]"
+          ],
+          [
+            "Dados das ofertas",
+            "[TÍTULO, OBJETIVOS, EMENTA, CARGA HORÁRIA, PÚBLICO, REQUISITOS E DISPONIBILIDADE OU FONTE OFICIAL]"
+          ],
+          [
+            "Ambiente e atendimento",
+            "[AVA, ACESSIBILIDADE, RECURSOS, EQUIPE, ATRIBUIÇÕES E CANAIS ACADÊMICOS E TECNOLÓGICOS]"
+          ],
+          [
+            "Avaliação e certificados",
+            "[REGRAS, APROVEITAMENTO MÍNIMO, CONCLUSÃO, EMISSORES E AUTENTICIDADE OU FONTE OFICIAL]"
+          ],
+          [
+            "Trilhas",
+            "[UNIDADES, SEQUÊNCIA, CARGAS HORÁRIAS, AVALIAÇÃO E EMISSÃO PARCIAL OU INTEGRAL, QUANDO APLICÁVEL]"
+          ],
+          [
+            "Atualização",
+            "[FONTE, RESPONSÁVEIS E CONTATOS PARA ATUALIZAÇÕES E ESCLARECIMENTOS]"
+          ]
+        ],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00064",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00064"
+        ],
+        "text": "1.2. O quadro delimitará se a autorização abrange apenas ofertas identificadas ou também itens futuros do catálogo. A inclusão de novos itens dependerá do enquadramento no escopo autorizado e do atendimento aos critérios do Regulamento.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00065",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00065"
+        ],
+        "text": "CLÁUSULA SEGUNDA\nDAS CONDIÇÕES DAS OFERTAS E DOS RECURSOS",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00066",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00066"
+        ],
+        "text": "2.1. A formação será integralmente gratuita, compreendidas matrícula, acesso, conteúdos e materiais obrigatórios, atividades, avaliação e emissão, disponibilização e validação dos certificados, sem continuidade necessária condicionada a pagamento.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00067",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00067"
+        ],
+        "text": "2.2. Não haverá transferência de recursos financeiros nem remuneração entre as partes. Cada parte proverá os meios que assumir no quadro.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00068",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00068"
+        ],
+        "text": "CLÁUSULA TERCEIRA\nDAS RESPONSABILIDADES DA INSTITUIÇÃO PARTICIPANTE",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00069",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00069"
+        ],
+        "text": "3.1. A INSTITUIÇÃO PARTICIPANTE disponibilizará as ofertas nas condições do quadro, assegurará a legitimidade e a atualização dos conteúdos e cumprirá as atribuições acadêmicas dos Cursos Livres e as que assumir nas Trilhas. Manterá os registros e os meios de comprovação de autenticidade dos certificados que emitir.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00070",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00070"
+        ],
+        "text": "3.2. Assegurará o acesso, a acessibilidade, o atendimento e o suporte sob sua responsabilidade. Comunicará à Presidência alterações, indisponibilidades e riscos aos participantes, com as providências de continuidade propostas.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00071",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00071"
+        ],
+        "text": "CLÁUSULA QUARTA\nDAS RESPONSABILIDADES DO CRA-SP",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00072",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00072"
+        ],
+        "text": "4.1. O CRA-SP atuará como conector, divulgando as ofertas autorizadas e orientando o acesso. Nas Trilhas, exercerá a curadoria e a organização pedagógica e cumprirá as atribuições de avaliação e emissão de certificados que lhe couberem. Quando utilizado seu ambiente, proverá os recursos e o suporte tecnológico pactuados.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00073",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00073"
+        ],
+        "text": "CLÁUSULA QUINTA\nDA DIVULGAÇÃO E DOS USOS AUTORIZADOS",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00074",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00074"
+        ],
+        "text": "5.1. Os usos autorizados dos conteúdos são: [MATERIAIS, USOS, AMBIENTES, PRAZO E LIMITES]. A divulgação do catálogo não autoriza reprodução ou adaptação de aulas e avaliações. As partes observarão a autoria e a Lei nº 9.610, de 19 de fevereiro de 1998.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00075",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00075"
+        ],
+        "text": "5.2. O uso das marcas dependerá de autorização do titular e se limitará ao objeto deste acordo, sem endosso geral a outros produtos ou serviços.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00076",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00076"
+        ],
+        "text": "CLÁUSULA SEXTA\nDOS REGISTROS E DOS DADOS PESSOAIS",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00077",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00077"
+        ],
+        "text": "6.1. As partes definirão os dados e os meios de compartilhamento necessários ao acesso, ao atendimento, à comprovação e ao acompanhamento das ofertas, com responsáveis, controle de acesso, medidas de segurança, atendimento aos titulares e condições de guarda e destinação, conforme a Lei nº 13.709, de 14 de agosto de 2018.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00078",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00078"
+        ],
+        "text": "CLÁUSULA SÉTIMA\nDA VIGÊNCIA E DO ACOMPANHAMENTO",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00079",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00079"
+        ],
+        "text": "7.1. O acordo vigorará de [DATA INICIAL] a [DATA FINAL]. A prorrogação será aprovada e formalizada antes do término, após avaliação da execução e concordância das partes, pelo procedimento do Regulamento.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00080",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00080"
+        ],
+        "text": "7.2. A área gestora do Programa e [RESPONSÁVEL DA INSTITUIÇÃO] acompanharão o cumprimento das condições do quadro e registrarão ocorrências e providências. As comunicações formais serão realizadas por presidencia@crasp.gov.br e [E-MAIL DA INSTITUIÇÃO].",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00081",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00081"
+        ],
+        "text": "CLÁUSULA OITAVA\nDAS ALTERAÇÕES E DAS ADEQUAÇÕES",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00082",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00082"
+        ],
+        "text": "8.1. A instituição ou o CRA-SP poderá propor atualizações do catálogo com base na fonte oficial. A área gestora as verificará e registrará, sob supervisão do Diretor de Formação Profissional, com fonte, data e alteração, sem nova aprovação colegiada quando preservados o escopo e as condições aprovados.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00083",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00083"
+        ],
+        "text": "8.2. Itens com pendências serão esclarecidos antes da divulgação. Alterações fora do escopo ou das condições aprovados seguirão o fluxo de aprovação e formalização do Regulamento; nenhuma adequação poderá afastar seus critérios ou a gratuidade.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00084",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00084"
+        ],
+        "text": "CLÁUSULA NONA\nDO ENCERRAMENTO E DA CONTINUIDADE",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00085",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00085"
+        ],
+        "text": "9.1. O acordo poderá encerrar-se por término de vigência, consenso, solicitação de uma das partes, descumprimento ou interesse público motivado, com comunicação em [PRAZO DE AVISO]. O encerramento por decisão do CRA-SP observará o procedimento do Regulamento, com manifestação da instituição e decisão motivada.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00086",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00086"
+        ],
+        "text": "9.2. Identificado descumprimento, a instituição será comunicada para esclarecimento e correção, quando cabível, em prazo formalmente informado.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00087",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00087"
+        ],
+        "text": "9.3. As partes definirão as providências de continuidade e atendimento aos participantes em formação, sem cobrança, preservando as responsabilidades e os registros e certificados já emitidos. As medidas urgentes observarão o art. 24, § 4º, da resolução geral do Programa.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00088",
+        "kind": "heading",
+        "sourceIds": [
+          "s-00088"
+        ],
+        "text": "CLÁUSULA DÉCIMA\nDOS CASOS NÃO PREVISTOS",
+        "level": 2,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00089",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00089"
+        ],
+        "text": "10.1. Os casos não previstos observarão o Regulamento e o art. 40 da resolução geral do Programa. Sua solução não dispensará critérios de aceitação nem requisitos das ofertas.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00090",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00090"
+        ],
+        "text": "E, por estarem de acordo, as partes assinam o presente instrumento.",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00091",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00091"
+        ],
+        "text": "[LOCAL], [DATA DA ASSINATURA].",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      },
+      {
+        "id": "s-00092",
+        "kind": "paragraph",
+        "sourceIds": [
+          "s-00092"
+        ],
+        "text": "[NOME DO PRESIDENTE DO CRA-SP]\nPresidente do CRA-SP\n\n[NOME DO REPRESENTANTE DA INSTITUIÇÃO]\n[CARGO E INSTITUIÇÃO]",
+        "level": 1,
+        "rows": [],
+        "items": [],
+        "image": "",
+        "caption": "",
+        "breakBefore": false
+      }
+    ],
+    "warnings": [
+      "A importação preserva o texto e a estrutura reconhecida; cabeçalhos, rodapés, caixas de texto, equações e marcações de revisão devem ser conferidos no original."
+    ],
+    "pageCount": 0,
+    "ocr": false,
+    "metadata": {
+      "title": "Regulamenta a seleção e a participação de instituições nos Eixos de Cursos Livres e Trilhas de Aprendizagem do Programa de Desenvolvimento Profissional do CRA-SP.",
+      "subject": "Regulamento complementar de participação institucional no PDP",
+      "author": "Conselho Regional de Administração de São Paulo"
+    }
+  },
+  "blocks": [
+    {
+      "id": "9405a2b9-aa43-4571-a752-9fb0436a84a9",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00001",
+        "s-00002",
+        "s-00003",
+        "s-00004",
+        "s-00005",
+        "s-00006",
+        "s-00007"
+      ],
+      "text": "Apresentação",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "b6f8abc6-7cce-4f08-b5a0-bdf2995379ba",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00001",
+        "s-00002",
+        "s-00003",
+        "s-00005"
+      ],
+      "text": "Este guia explica a minuta que regulamenta a seleção e a participação de instituições nos Cursos Livres e nas Trilhas de Aprendizagem do Programa de Desenvolvimento Profissional do CRA-SP. A leitura acompanha o caminho da proposta, dos critérios de aceitação à execução e ao encerramento da cooperação.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "7d127e55-57f8-4124-955f-64481b718f2c",
+      "kind": "callout",
+      "sourceIds": [
+        "s-00011",
+        "s-00041"
+      ],
+      "text": "O CRA-SP atua como conector: divulga as ofertas aceitas e orienta o acesso. A cooperação é gratuita e sem transferência de recursos ou remuneração entre as partes.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "d07e7909-434c-4ac8-9f73-58317f55c6f1",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00008",
+        "s-00012",
+        "s-00022",
+        "s-00038",
+        "s-00043",
+        "s-00053",
+        "s-00057"
+      ],
+      "text": "Como o regulamento se organiza",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "06bb4c3b-d869-4ad2-9fe5-cc5e70992c37",
+      "kind": "cards",
+      "sourceIds": [
+        "s-00008",
+        "s-00012",
+        "s-00022",
+        "s-00038",
+        "s-00043",
+        "s-00053",
+        "s-00057"
+      ],
+      "text": "",
+      "level": 1,
+      "rows": [],
+      "items": [
+        {
+          "title": "Aceitar a oferta",
+          "text": "Identificar instituições compatíveis e verificar os critérios obrigatórios."
+        },
+        {
+          "title": "Analisar e aprovar",
+          "text": "Receber a proposta, registrar evidências e submeter a participação às instâncias competentes."
+        },
+        {
+          "title": "Formalizar e executar",
+          "text": "Assinar o acordo, delimitar as ofertas e os usos autorizados e acompanhar as condições aprovadas."
+        },
+        {
+          "title": "Atualizar e encerrar",
+          "text": "Distinguir atualização operacional de mudança de escopo e preservar o atendimento aos participantes."
+        }
+      ],
+      "image": "",
+      "caption": "",
+      "breakBefore": false,
+      "layout": "grid"
+    },
+    {
+      "id": "523685e0-3d78-4a71-b0e9-0affcff48b1f",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00001",
+        "s-00002",
+        "s-00004",
+        "s-00005",
+        "s-00006",
+        "s-00007"
+      ],
+      "text": "Fundamento e identificação da minuta",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "6ef2c80f-928d-4dfe-87e5-c8f2d793115a",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00001",
+        "s-00002",
+        "s-00004",
+        "s-00005",
+        "s-00006",
+        "s-00007"
+      ],
+      "text": "O ato é do Plenário do CRA-SP e se fundamenta na Lei nº 4.769/1965, no Decreto nº 61.934/1967 e nos arts. 24 e 25, inciso XXXII, do Regimento Interno aprovado pela Resolução Normativa CFA nº 658/2024. O regulamento complementa a resolução geral do Programa, conforme seu art. 26, inciso I. A minuta conserva os campos de número, data e deliberação plenária para preenchimento.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "9b729611-f761-42e6-8156-a1ec0c092e8f",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00008"
+      ],
+      "text": "1. Participação institucional",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "101bac81-5059-4c90-a2ab-5d9ef64052fc",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00009",
+        "s-00010"
+      ],
+      "text": "Uma porta de entrada contínua",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "4e382207-b39e-4483-ae68-6db624d91c91",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00009",
+        "s-00010"
+      ],
+      "text": "O regulamento trata dos Eixos de Cursos Livres e Trilhas de Aprendizagem e complementa a resolução geral do Programa. Podem apresentar propostas instituições de educação superior, associações, federações, órgãos e entidades públicos e outras pessoas jurídicas com atuação compatível.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "a5a8bfea-07ae-4169-b230-609586a3584b",
+      "kind": "callout",
+      "sourceIds": [
+        "s-00010"
+      ],
+      "text": "O recebimento é contínuo, sem exclusividade e sem classificação competitiva entre instituições.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "55954be5-6e78-4b32-b7ee-5aa75128bfaf",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00011"
+      ],
+      "text": "O papel de conexão do CRA-SP compreende divulgar as ofertas aceitas e orientar seu acesso. Para Cursos Livres, as mesmas regras alcançam a divulgação por outros canais institucionais do Conselho.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "74593802-0bf2-4c97-b3a1-ff68a5556b2e",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00012",
+        "s-00013"
+      ],
+      "text": "2. Critérios de aceitação",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "6669fdd1-856f-420b-bda8-313e1f021dd8",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00013",
+        "s-00035"
+      ],
+      "text": "A aceitação exige o atendimento às condições obrigatórias da oferta e da instituição. A proposta deve permitir verificar cada critério com informações e evidências.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "bf4509ab-436b-4624-8976-f9a729c0457f",
+      "kind": "cards",
+      "sourceIds": [
+        "s-00014",
+        "s-00015",
+        "s-00016",
+        "s-00017",
+        "s-00018",
+        "s-00019"
+      ],
+      "text": "Seis verificações obrigatórias",
+      "level": 1,
+      "rows": [],
+      "items": [
+        {
+          "title": "Regularidade institucional",
+          "text": "Constituição ou criação regular, representação válida e ausência de impedimento legal aplicável à cooperação."
+        },
+        {
+          "title": "Coerência da formação",
+          "text": "Vínculo com as áreas da Administração; título, objetivos, ementa e carga horária coerentes com a formação anunciada."
+        },
+        {
+          "title": "Gratuidade integral",
+          "text": "Matrícula, acesso, conteúdos, materiais obrigatórios, atividades, avaliação e certificados gratuitos, inclusive disponibilização e validação."
+        },
+        {
+          "title": "Acesso e execução",
+          "text": "Público, requisitos, AVA da instituição ou do CRA-SP, acessibilidade, recursos, equipe, responsáveis e canais acadêmicos e tecnológicos identificados."
+        },
+        {
+          "title": "Conclusão e certificados",
+          "text": "Regras de avaliação, aproveitamento mínimo, conclusão e emissão de certificados disponíveis na oferta ou na fonte oficial."
+        },
+        {
+          "title": "Direitos e responsabilidades",
+          "text": "Declaração de titularidade ou autorização para os usos propostos dos conteúdos e definição das responsabilidades de execução."
+        }
+      ],
+      "image": "",
+      "caption": "",
+      "breakBefore": false,
+      "layout": "grid"
+    },
+    {
+      "id": "6ec69e5c-a370-42e7-a464-7aeed8d5bfef",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00016",
+        "s-00020"
+      ],
+      "text": "A formação deve poder terminar sem pagamento",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "cdbcb220-60d8-4a38-92a4-a4884d368fe4",
+      "kind": "callout",
+      "sourceIds": [
+        "s-00020"
+      ],
+      "text": "Não basta oferecer uma etapa inicial gratuita: é vedada a continuidade necessária condicionada à aquisição de produto ou serviço. A formação anunciada deve ser concluída integralmente sem pagamento.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "917dbfed-c665-4618-85f0-edce153f5fb5",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00021"
+      ],
+      "text": "O que identificar em uma Trilha",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "ddc082dd-f216-4e0b-be27-54f2b7485c6a",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00021"
+      ],
+      "text": "A oferta deve informar unidades formativas, sequência pedagógica, conteúdos e cargas horárias. A avaliação e os certificados podem corresponder a cada unidade, à trilha completa ou a ambas, conforme a própria oferta.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "85629e1d-6f2a-4549-b161-644a073b76c2",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00022"
+      ],
+      "text": "3. Da proposta à aprovação",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "6302b13f-4a49-4ffd-9b67-811740e8ec46",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00023"
+      ],
+      "text": "3.1. Preparar a solicitação",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "40db9de7-377a-49f0-8bb2-7adb513bac37",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00023"
+      ],
+      "text": "A instituição encaminha a proposta a presidencia@crasp.gov.br. O envio reúne identificação, natureza jurídica, CNPJ, ato constitutivo ou de criação, poderes do representante, responsáveis e contatos, além das ofertas, das evidências de atendimento aos critérios e das declarações de concordância com os regulamentos e de gratuidade integral.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "881d81cf-3a9b-4c97-a9d3-291427cafdbc",
+      "kind": "table",
+      "sourceIds": [
+        "s-00024",
+        "s-00025"
+      ],
+      "text": "Formas de apresentar as ofertas",
+      "level": 1,
+      "rows": [
+        [
+          "Apresentação",
+          "Delimitação necessária"
+        ],
+        [
+          "Oferta individual",
+          "Identificar a formação e os dados necessários à análise."
+        ],
+        [
+          "Lista de ofertas",
+          "Definir quais cursos ou trilhas integram a proposta."
+        ],
+        [
+          "Catálogo oficial por endereço eletrônico",
+          "Delimitar o escopo e utilizar a fonte oficial para os dados suficientes à análise, sem reapresentação individual."
+        ],
+        [
+          "Ofertas futuras do catálogo",
+          "Incluir essa abrangência expressamente no escopo aprovado e preservar os critérios e as condições da cooperação."
+        ]
+      ],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "c45b5575-f797-486f-a2d0-5e0a6a3b0559",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00026",
+        "s-00027"
+      ],
+      "text": "Nesta cooperação gratuita e sem transferência de recursos, não se exigem da instituição Plano de Trabalho e Cronograma Físico-Financeiro autônomos, conforme o art. 28, § 1º, da resolução geral. A página do Programa mantém o Regulamento, a minuta do acordo e as orientações para manifestações de interesse à Presidência.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "b25727f9-a3b1-4e17-912f-01c4b286b1ed",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00028"
+      ],
+      "text": "3.2. Fluxo de análise e aprovação",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "77269abc-f3a2-4498-be11-0911b04745cf",
+      "kind": "diagram",
+      "sourceIds": [
+        "s-00028",
+        "s-00029",
+        "s-00030",
+        "s-00031",
+        "s-00032",
+        "s-00033",
+        "s-00034"
+      ],
+      "text": "Da manifestação de interesse à cooperação formalizada",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "Fonte: art. 4º, incisos I a VI.",
+      "breakBefore": false,
+      "layout": "process",
+      "nodes": [
+        {
+          "id": "presidencia-recebe",
+          "label": "Presidência",
+          "detail": "Recebe e encaminha a proposta à área gestora.",
+          "sourceIds": [
+            "s-00029"
+          ]
+        },
+        {
+          "id": "gerencia",
+          "label": "Gerência de Inovação e Desenvolvimento Profissional",
+          "detail": "Verifica documentos e critérios, registra evidências e conclui a análise.",
+          "sourceIds": [
+            "s-00030"
+          ]
+        },
+        {
+          "id": "diretor",
+          "label": "Diretor de Formação Profissional",
+          "detail": "Emite parecer conclusivo sobre proposta, escopo e condições.",
+          "sourceIds": [
+            "s-00031"
+          ]
+        },
+        {
+          "id": "direx",
+          "label": "Diretoria Executiva",
+          "detail": "Aprecia a proposta e, após aprová-la, encaminha ao Plenário.",
+          "sourceIds": [
+            "s-00032"
+          ]
+        },
+        {
+          "id": "plenario",
+          "label": "Plenário",
+          "detail": "Delibera sobre instituição, ofertas e condições da cooperação.",
+          "sourceIds": [
+            "s-00033"
+          ]
+        },
+        {
+          "id": "presidencia-formaliza",
+          "label": "Presidência",
+          "detail": "Formaliza a cooperação aprovada e publica o instrumento.",
+          "sourceIds": [
+            "s-00034"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "presidencia-recebe",
+          "to": "gerencia",
+          "label": ""
+        },
+        {
+          "from": "gerencia",
+          "to": "diretor",
+          "label": ""
+        },
+        {
+          "from": "diretor",
+          "to": "direx",
+          "label": ""
+        },
+        {
+          "from": "direx",
+          "to": "plenario",
+          "label": "Após aprovação"
+        },
+        {
+          "from": "plenario",
+          "to": "presidencia-formaliza",
+          "label": "Cooperação aprovada"
+        }
+      ]
+    },
+    {
+      "id": "3575bdda-d280-4705-a40f-5a894d35e261",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00035",
+        "s-00036",
+        "s-00037"
+      ],
+      "text": "3.3. Evidências, pendências e decisão",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "36e6d92f-f237-4772-b305-5c6aac9b971c",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00035"
+      ],
+      "text": "A análise registra, para cada critério, a evidência examinada e a conclusão: atendimento, não atendimento ou pendência. A complementação solicitada deve indicar os elementos faltantes e o prazo de resposta.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "2b8a99e4-ae6f-4cab-a247-20b509f7caaf",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00036"
+      ],
+      "text": "Também se examinam o objeto social e as atividades efetivamente exercidas. Havendo indícios de atividade básica ou serviços a terceiros sujeitos a registro no CRA-SP, solicita-se manifestação da área de Fiscalização e Registro sobre o enquadramento e a regularidade exigível. A mera apresentação da proposta não presume obrigação de registro.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "21f6f4ca-ad51-481e-af20-184f155cda7f",
+      "kind": "callout",
+      "sourceIds": [
+        "s-00037"
+      ],
+      "text": "A instituição recebe os fundamentos do indeferimento ou a identificação das ofertas, do escopo e das condições aprovados. Somente a cooperação aprovada é formalizada; divulgar as ofertas depende da assinatura do acordo.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "e10b9ab1-1a31-43ff-90d8-0b6e3d1e0a48",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00038"
+      ],
+      "text": "4. Formalização e execução",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "5744f8ab-bfa0-4275-b15c-4fe67add5b19",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00039"
+      ],
+      "text": "A cooperação é formalizada por Acordo de Cooperação Técnica, conforme a minuta do Anexo I, assinado pelo Presidente do CRA-SP e pelo representante habilitado da instituição. O instrumento delimita as ofertas ou o catálogo, o ambiente, as atribuições acadêmicas e tecnológicas e os usos autorizados dos conteúdos.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "fa6e995e-32ed-467b-b347-1c3ca263a3f9",
+      "kind": "cards",
+      "sourceIds": [
+        "s-00040",
+        "s-00041",
+        "s-00042"
+      ],
+      "text": "Limites que o acordo deve preservar",
+      "level": 1,
+      "rows": [],
+      "items": [
+        {
+          "title": "Adequações justificadas",
+          "text": "As cláusulas podem atender às características da oferta e às necessidades das partes, após análise e aprovação, sem afastar o Regulamento. Condições ausentes do modelo são examinadas antes da assinatura."
+        },
+        {
+          "title": "Sem repasse ou remuneração",
+          "text": "Não haverá transferência de recursos financeiros nem remuneração entre as partes."
+        },
+        {
+          "title": "Divulgação não é reprodução",
+          "text": "Autorizar a divulgação de um catálogo não autoriza reproduzir, adaptar ou disponibilizar aulas e avaliações no AVA do CRA-SP."
+        },
+        {
+          "title": "Autorização expressa do titular",
+          "text": "Esses usos precisam de autorização expressa que identifique materiais, ambientes, prazo e limites."
+        }
+      ],
+      "image": "",
+      "caption": "",
+      "breakBefore": false,
+      "layout": "grid"
+    },
+    {
+      "id": "97e65488-e231-4e97-9775-c8cbee3ee2ca",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00043"
+      ],
+      "text": "5. Atualizações e encerramento",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "968bd553-3e84-4a72-b02f-b6a382e045a4",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00044",
+        "s-00045",
+        "s-00046",
+        "s-00047"
+      ],
+      "text": "5.1. Atualizar dentro do escopo aprovado",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "13ef110a-5cf1-4093-994e-e0eff4119555",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00044"
+      ],
+      "text": "Atualizações cadastrais, informativas ou de execução que preservem objeto, escopo e condições aprovados ficam na rotina operacional: a área gestora verifica e registra fonte, data e alteração, sob supervisão técnica do Diretor de Formação Profissional, sem nova aprovação colegiada.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "82daa705-8732-499b-a83f-7dac86be0fd9",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00045"
+      ],
+      "text": "A inclusão, atualização ou retirada de registros pode decorrer de informação da instituição ou de consulta do CRA-SP à fonte oficial. Ofertas futuras só entram nessa rotina quando estiverem expressamente abrangidas pela autorização.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "3fe58269-5003-4d40-a7a2-ca7ada31783f",
+      "kind": "diagram",
+      "sourceIds": [
+        "s-00044",
+        "s-00045",
+        "s-00046",
+        "s-00047"
+      ],
+      "text": "Qual rito seguir para uma atualização?",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "Fonte: art. 6º e seus parágrafos. Atualização operacional não prorroga o acordo.",
+      "breakBefore": false,
+      "layout": "decision",
+      "nodes": [
+        {
+          "id": "fonte",
+          "label": "Informação da instituição ou consulta à fonte oficial",
+          "detail": "Inclusão, atualização ou retirada de registro do catálogo autorizado.",
+          "sourceIds": [
+            "s-00045"
+          ]
+        },
+        {
+          "id": "escopo",
+          "label": "Preserva objeto, escopo e condições?",
+          "detail": "A autorização deve abranger a oferta e a alteração pretendida.",
+          "sourceIds": [
+            "s-00044",
+            "s-00047"
+          ]
+        },
+        {
+          "id": "rotina",
+          "label": "Verificação e registro operacional",
+          "detail": "Área gestora, com fonte, data e alteração; supervisão técnica do Diretor.",
+          "sourceIds": [
+            "s-00044"
+          ]
+        },
+        {
+          "id": "novo-rito",
+          "label": "Análise, aprovação e formalização",
+          "detail": "Seguir o procedimento do art. 4º antes da divulgação.",
+          "sourceIds": [
+            "s-00047"
+          ]
+        },
+        {
+          "id": "duvida",
+          "label": "Há pendência sobre os critérios?",
+          "detail": "Dúvidas exigem consulta à instituição e análise técnica simplificada.",
+          "sourceIds": [
+            "s-00046"
+          ]
+        },
+        {
+          "id": "esclarecer",
+          "label": "Esclarecer com a instituição",
+          "detail": "O item com pendência só será divulgado após esclarecimento.",
+          "sourceIds": [
+            "s-00046"
+          ]
+        },
+        {
+          "id": "item",
+          "label": "Item esclarecido",
+          "detail": "Divulgação condicionada ao esclarecimento de eventual pendência.",
+          "sourceIds": [
+            "s-00046"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "fonte",
+          "to": "escopo",
+          "label": ""
+        },
+        {
+          "from": "escopo",
+          "to": "rotina",
+          "label": "Sim"
+        },
+        {
+          "from": "escopo",
+          "to": "novo-rito",
+          "label": "Não"
+        },
+        {
+          "from": "rotina",
+          "to": "duvida",
+          "label": ""
+        },
+        {
+          "from": "duvida",
+          "to": "esclarecer",
+          "label": "Sim"
+        },
+        {
+          "from": "duvida",
+          "to": "item",
+          "label": "Sem pendência"
+        },
+        {
+          "from": "esclarecer",
+          "to": "item",
+          "label": "Após esclarecer"
+        }
+      ]
+    },
+    {
+      "id": "27a5feac-9d66-47be-b6c2-089f361472f4",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00048",
+        "s-00049",
+        "s-00050",
+        "s-00051",
+        "s-00052"
+      ],
+      "text": "5.2. Prorrogar e encerrar com continuidade",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "424641ae-ec96-4d66-8513-2b6b7256a868",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00047",
+        "s-00048"
+      ],
+      "text": "O acordo tem prazo determinado. Sua prorrogação exige avaliação do cumprimento das obrigações, da regularidade institucional e da manutenção das condições aprovadas, concordância das partes e aprovação e formalização pelo rito do art. 4º, antes do término. A atualização operacional não prorroga sua vigência.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "2e04b23a-7d67-4cde-a2c9-7cf6eb8a7ec1",
+      "kind": "cards",
+      "sourceIds": [
+        "s-00049",
+        "s-00050",
+        "s-00051",
+        "s-00052"
+      ],
+      "text": "Providências de encerramento",
+      "level": 1,
+      "rows": [],
+      "items": [
+        {
+          "title": "Motivo e comunicação",
+          "text": "Término, consenso, solicitação de parte, descumprimento ou interesse público motivado. Observar o aviso pactuado; decisão do CRA-SP segue o procedimento de aprovação, com manifestação da instituição e motivação."
+        },
+        {
+          "title": "Esclarecer e corrigir",
+          "text": "Diante de descumprimento, comunicar a instituição para esclarecimento e correção, quando cabível, em prazo formalmente informado."
+        },
+        {
+          "title": "Preservar os participantes",
+          "text": "Definir continuidade e atendimento de quem está em formação, mantendo a gratuidade, as responsabilidades acadêmicas e os registros e certificados das atividades concluídas."
+        },
+        {
+          "title": "Comunicar riscos",
+          "text": "A instituição informa à Presidência alterações, indisponibilidades e descumprimentos, com providências propostas. Riscos aos participantes são comunicados imediatamente; urgências seguem o art. 24, § 4º, da resolução geral."
+        }
+      ],
+      "image": "",
+      "caption": "",
+      "breakBefore": false,
+      "layout": "grid"
+    },
+    {
+      "id": "c8dd2e2f-5ce7-47a5-bf14-d5f01ad03e37",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00053"
+      ],
+      "text": "6. Disposições finais",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "5aa4620f-b74a-40ae-82e9-8b524f5d4a2e",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00054",
+        "s-00055"
+      ],
+      "text": "Os casos omissos seguem o art. 40 da resolução geral do Programa. Esta Resolução e o Anexo I serão disponibilizados na página do Programa; a vigência começa na publicação.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "8195c954-9c9b-4d75-a64a-894c097a7831",
+      "kind": "callout",
+      "sourceIds": [
+        "s-00056"
+      ],
+      "text": "A identificação da autoridade signatária permanece para preenchimento: [NOME DA AUTORIDADE SIGNATÁRIA], [REGISTRO PROFISSIONAL], Presidente do CRA-SP.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "13f80bf3-ec7f-4fc5-9112-c15c56f7c55e",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00057"
+      ],
+      "text": "7. Anexo I — Acordo de Cooperação Técnica",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": true
+    },
+    {
+      "id": "5e96e50c-b292-400f-b4a6-ca6fc967c0f6",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00057",
+        "s-00058",
+        "s-00059"
+      ],
+      "text": "O Anexo I oferece a minuta de instrumento para formalizar as condições aprovadas. O acordo identifica as partes, delimita a oferta e distribui responsabilidades. Os campos entre colchetes permanecem abertos para preenchimento na formalização.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "73966575-fc55-43e9-8ed4-13e6ca823d61",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00058",
+        "s-00059",
+        "s-00060",
+        "s-00061",
+        "s-00064"
+      ],
+      "text": "7.1. Identificar as partes e o objeto",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "a5c00ea9-b3aa-4d61-89ea-70822b4909f0",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00058",
+        "s-00059"
+      ],
+      "text": "O Acordo de Cooperação Técnica nº [NÚMERO DO ACORDO] qualifica o CRA-SP e a instituição participante por CNPJ, sede e representação. Conservam-se os campos [CNPJ DO CRA-SP], [ENDEREÇO DO CRA-SP], [NOME E QUALIFICAÇÃO], [DENOMINAÇÃO DA INSTITUIÇÃO], [NATUREZA JURÍDICA], [CNPJ DA INSTITUIÇÃO], [ENDEREÇO DA INSTITUIÇÃO] e [NOME, CARGO E PODERES DE REPRESENTAÇÃO]. O fundamento identifica tanto a resolução de Cursos Livres e Trilhas quanto a resolução geral do Programa.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "10b1adab-0cea-4241-a0a3-5f587c6b5bfb",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00060",
+        "s-00061",
+        "s-00064"
+      ],
+      "text": "Na Cláusula Primeira, o objeto é a cooperação para divulgar e oferecer Cursos Livres, Trilhas ou ambos, gratuitamente, conforme o processo administrativo nº [NÚMERO DO PROCESSO]. O quadro delimita se a autorização compreende apenas ofertas identificadas ou também itens futuros do catálogo; novas inclusões dependem desse escopo e dos critérios do Regulamento.",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "b890d231-6c6e-474a-b9da-849f8919eaee",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00062"
+      ],
+      "text": "Quadro das ofertas e condições",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "f50fe2f1-fca8-4ce1-8c30-d879f7cd0cf3",
+      "kind": "table",
+      "sourceIds": [
+        "s-00063"
+      ],
+      "text": "",
+      "level": 1,
+      "rows": [
+        [
+          "CAMPO",
+          "CONDIÇÃO ACORDADA"
+        ],
+        [
+          "Escopo autorizado",
+          "[EIXOS E OFERTAS; APENAS ITENS IDENTIFICADOS OU TAMBÉM OFERTAS FUTURAS DO CATÁLOGO]"
+        ],
+        [
+          "Fonte oficial",
+          "[LISTA OU ENDEREÇO ELETRÔNICO, DELIMITAÇÃO DO CATÁLOGO E DATA DE REFERÊNCIA]"
+        ],
+        [
+          "Dados das ofertas",
+          "[TÍTULO, OBJETIVOS, EMENTA, CARGA HORÁRIA, PÚBLICO, REQUISITOS E DISPONIBILIDADE OU FONTE OFICIAL]"
+        ],
+        [
+          "Ambiente e atendimento",
+          "[AVA, ACESSIBILIDADE, RECURSOS, EQUIPE, ATRIBUIÇÕES E CANAIS ACADÊMICOS E TECNOLÓGICOS]"
+        ],
+        [
+          "Avaliação e certificados",
+          "[REGRAS, APROVEITAMENTO MÍNIMO, CONCLUSÃO, EMISSORES E AUTENTICIDADE OU FONTE OFICIAL]"
+        ],
+        [
+          "Trilhas",
+          "[UNIDADES, SEQUÊNCIA, CARGAS HORÁRIAS, AVALIAÇÃO E EMISSÃO PARCIAL OU INTEGRAL, QUANDO APLICÁVEL]"
+        ],
+        [
+          "Atualização",
+          "[FONTE, RESPONSÁVEIS E CONTATOS PARA ATUALIZAÇÕES E ESCLARECIMENTOS]"
+        ]
+      ],
+      "items": [],
+      "image": "",
+      "caption": "Anexo I: quadro original preservado como tabela editável.",
+      "breakBefore": false
+    },
+    {
+      "id": "cd00e88c-fed5-455f-8b3e-f7903ef37a08",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00065",
+        "s-00068",
+        "s-00071",
+        "s-00073",
+        "s-00076"
+      ],
+      "text": "7.2. Condições, responsabilidades e proteção",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "becacf49-dceb-4528-a920-b520710fee23",
+      "kind": "table",
+      "sourceIds": [
+        "s-00065",
+        "s-00066",
+        "s-00067",
+        "s-00068",
+        "s-00069",
+        "s-00070",
+        "s-00071",
+        "s-00072",
+        "s-00073",
+        "s-00074",
+        "s-00075",
+        "s-00076",
+        "s-00077"
+      ],
+      "text": "Cláusulas Segunda a Sexta",
+      "level": 1,
+      "rows": [
+        [
+          "Cláusula",
+          "Condição do instrumento"
+        ],
+        [
+          "Segunda · gratuidade e recursos",
+          "A formação é inteiramente gratuita: matrícula, acesso, conteúdos, materiais obrigatórios, atividades, avaliação e certificados, inclusive disponibilização e validação. Não há continuidade necessária paga, transferência de recursos ou remuneração; cada parte provê os meios que assumir no quadro."
+        ],
+        [
+          "Terceira · instituição participante",
+          "Disponibiliza as ofertas nas condições do quadro, assegura legitimidade e atualização do conteúdo e cumpre as atribuições acadêmicas dos Cursos Livres e as assumidas nas Trilhas. Mantém registros e autenticidade dos certificados; garante acesso, acessibilidade, atendimento e suporte sob sua responsabilidade e comunica alterações, indisponibilidades e riscos à Presidência, com providências de continuidade."
+        ],
+        [
+          "Quarta · CRA-SP",
+          "Atua como conector, divulga ofertas autorizadas e orienta o acesso. Nas Trilhas, exerce curadoria e organização pedagógica e cumpre as atribuições de avaliação e certificados que lhe couberem. Se utilizado seu AVA, provê os recursos e o suporte tecnológico pactuados."
+        ],
+        [
+          "Quinta · divulgação, conteúdo e marcas",
+          "Os usos autorizados são descritos em [MATERIAIS, USOS, AMBIENTES, PRAZO E LIMITES]. Divulgar catálogo não permite reproduzir ou adaptar aulas e avaliações. Observar autoria e Lei nº 9.610/1998. Marcas dependem de autorização do titular, limitam-se ao objeto e não representam endosso geral a outros produtos ou serviços."
+        ],
+        [
+          "Sexta · registros e dados pessoais",
+          "Definir dados e meios de compartilhamento necessários ao acesso, atendimento, comprovação e acompanhamento das ofertas, com responsáveis, controle de acesso, segurança, atendimento aos titulares e guarda e destinação, conforme a Lei nº 13.709/2018."
+        ]
+      ],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "e61ee0ef-8f13-4bc1-aa3c-d6d42fb753bc",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00078",
+        "s-00081",
+        "s-00084",
+        "s-00088"
+      ],
+      "text": "7.3. Acompanhamento e alterações",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "aba60658-6e62-4a72-ad7c-33a89f273a8c",
+      "kind": "cards",
+      "sourceIds": [
+        "s-00078",
+        "s-00079",
+        "s-00080",
+        "s-00081",
+        "s-00082",
+        "s-00083",
+        "s-00084",
+        "s-00085",
+        "s-00086",
+        "s-00087",
+        "s-00088",
+        "s-00089"
+      ],
+      "text": "Cláusulas Sétima a Décima",
+      "level": 1,
+      "rows": [],
+      "items": [
+        {
+          "title": "Sétima · vigência e acompanhamento",
+          "text": "Fixar [DATA INICIAL] e [DATA FINAL]. Prorrogar antes do término, com avaliação, concordância e rito do Regulamento. A área gestora e [RESPONSÁVEL DA INSTITUIÇÃO] acompanham obrigações e registram ocorrências e providências; comunicações por presidencia@crasp.gov.br e [E-MAIL DA INSTITUIÇÃO]."
+        },
+        {
+          "title": "Oitava · atualizações e adequações",
+          "text": "Instituição ou CRA-SP pode propor atualização pela fonte oficial. A área gestora registra fonte, data e alteração sob supervisão do Diretor, sem nova aprovação quando preservados escopo e condições. Esclarecer pendências antes de divulgar; mudanças fora do escopo seguem aprovação e formalização, sem afastar critérios ou gratuidade."
+        },
+        {
+          "title": "Nona · encerramento e continuidade",
+          "text": "Encerrar nas hipóteses previstas, com aviso em [PRAZO DE AVISO]. Decisão do CRA-SP segue o procedimento do Regulamento, com manifestação da instituição e motivação. Comunicar descumprimentos para esclarecimento e correção quando cabível. Definir continuidade e atendimento sem cobrança, preservando responsabilidades, registros e certificados já emitidos; urgências seguem o art. 24, § 4º, da resolução geral."
+        },
+        {
+          "title": "Décima · casos não previstos",
+          "text": "Observar o Regulamento e o art. 40 da resolução geral. A solução não dispensa os critérios de aceitação nem os requisitos das ofertas."
+        }
+      ],
+      "image": "",
+      "caption": "",
+      "breakBefore": false,
+      "layout": "grid"
+    },
+    {
+      "id": "e73fbbc9-7046-4b81-8af3-3ebcbe9273cd",
+      "kind": "heading",
+      "sourceIds": [
+        "s-00090",
+        "s-00091",
+        "s-00092"
+      ],
+      "text": "7.4. Assinatura do instrumento",
+      "level": 2,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    },
+    {
+      "id": "63047f69-2ec9-4737-835d-3da2f9c2ca4f",
+      "kind": "paragraph",
+      "sourceIds": [
+        "s-00090",
+        "s-00091",
+        "s-00092"
+      ],
+      "text": "As partes assinam o instrumento em [LOCAL], [DATA DA ASSINATURA]. Os campos finais identificam [NOME DO PRESIDENTE DO CRA-SP], Presidente do CRA-SP, e [NOME DO REPRESENTANTE DA INSTITUIÇÃO], [CARGO E INSTITUIÇÃO].",
+      "level": 1,
+      "rows": [],
+      "items": [],
+      "image": "",
+      "caption": "",
+      "breakBefore": false
+    }
+  ],
+  "theme": {
+    "primary": "#183364",
+    "accent": "#d9ad4c",
+    "fontSize": 11,
+    "logo": "",
+    "organization": "CRA-SP"
+  },
+  "cover": true,
+  "toc": true,
+  "createdAt": "2026-11-13T23:27:26.114Z",
+  "updatedAt": "2026-11-13T23:27:26.114Z"
+}

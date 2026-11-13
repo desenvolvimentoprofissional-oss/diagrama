@@ -1,0 +1,525 @@
+{
+  "pdfPages": 17,
+  "wordPages": 17,
+  "headings": [
+    {
+      "heading": "Apresentação",
+      "pdf": [
+        3,
+        6,
+        8
+      ],
+      "word": [
+        3,
+        6,
+        8
+      ]
+    },
+    {
+      "heading": "Como o regulamento se organiza",
+      "pdf": [
+        3
+      ],
+      "word": [
+        3
+      ]
+    },
+    {
+      "heading": "Fundamento e identificação da minuta",
+      "pdf": [
+        3
+      ],
+      "word": [
+        3
+      ]
+    },
+    {
+      "heading": "1. Participação institucional",
+      "pdf": [
+        4
+      ],
+      "word": [
+        4
+      ]
+    },
+    {
+      "heading": "Uma porta de entrada contínua",
+      "pdf": [
+        4
+      ],
+      "word": [
+        4
+      ]
+    },
+    {
+      "heading": "2. Critérios de aceitação",
+      "pdf": [
+        5
+      ],
+      "word": [
+        5
+      ]
+    },
+    {
+      "heading": "A formação deve poder terminar sem pagamento",
+      "pdf": [
+        5
+      ],
+      "word": [
+        5
+      ]
+    },
+    {
+      "heading": "O que identificar em uma Trilha",
+      "pdf": [
+        5
+      ],
+      "word": [
+        5
+      ]
+    },
+    {
+      "heading": "3. Da proposta à aprovação",
+      "pdf": [
+        6
+      ],
+      "word": [
+        6
+      ]
+    },
+    {
+      "heading": "3.1. Preparar a solicitação",
+      "pdf": [
+        6
+      ],
+      "word": [
+        6
+      ]
+    },
+    {
+      "heading": "3.2. Fluxo de análise e aprovação",
+      "pdf": [
+        7
+      ],
+      "word": [
+        7
+      ]
+    },
+    {
+      "heading": "3.3. Evidências, pendências e decisão",
+      "pdf": [
+        8
+      ],
+      "word": [
+        8
+      ]
+    },
+    {
+      "heading": "4. Formalização e execução",
+      "pdf": [
+        9
+      ],
+      "word": [
+        9
+      ]
+    },
+    {
+      "heading": "5. Atualizações e encerramento",
+      "pdf": [
+        10
+      ],
+      "word": [
+        10
+      ]
+    },
+    {
+      "heading": "5.1. Atualizar dentro do escopo aprovado",
+      "pdf": [
+        10
+      ],
+      "word": [
+        10
+      ]
+    },
+    {
+      "heading": "5.2. Prorrogar e encerrar com continuidade",
+      "pdf": [
+        12
+      ],
+      "word": [
+        12
+      ]
+    },
+    {
+      "heading": "6. Disposições finais",
+      "pdf": [
+        13
+      ],
+      "word": [
+        13
+      ]
+    },
+    {
+      "heading": "7. Anexo I — Acordo de Cooperação Técnica",
+      "pdf": [
+        14
+      ],
+      "word": [
+        14
+      ]
+    },
+    {
+      "heading": "7.1. Identificar as partes e o objeto",
+      "pdf": [
+        14
+      ],
+      "word": [
+        14
+      ]
+    },
+    {
+      "heading": "Quadro das ofertas e condições",
+      "pdf": [
+        14
+      ],
+      "word": [
+        14
+      ]
+    },
+    {
+      "heading": "7.2. Condições, responsabilidades e proteção",
+      "pdf": [
+        15
+      ],
+      "word": [
+        15
+      ]
+    },
+    {
+      "heading": "7.3. Acompanhamento e alterações",
+      "pdf": [
+        16
+      ],
+      "word": [
+        16
+      ]
+    },
+    {
+      "heading": "7.4. Assinatura do instrumento",
+      "pdf": [
+        17
+      ],
+      "word": [
+        17
+      ]
+    }
+  ],
+  "headingPageMappingMatches": true,
+  "coverGlyphCheck": [
+    {
+      "format": "pdf",
+      "separateTitleLines": true,
+      "gapPixels": 43,
+      "scale": 3
+    },
+    {
+      "format": "word",
+      "separateTitleLines": true,
+      "gapPixels": 42,
+      "scale": 3
+    }
+  ],
+  "wordTocFieldCount": 1,
+  "nativeTableCellsExact": true,
+  "missingWordTexts": [],
+  "missingPdfTexts": [],
+  "pages": [
+    {
+      "format": "pdf",
+      "page": 1,
+      "textChars": 268,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0,
+      "fontMetricOverlapCandidates": [
+        [
+          "Cursos Livres e Trilhas de ",
+          "Aprendizagem"
+        ]
+      ]
+    },
+    {
+      "format": "pdf",
+      "page": 2,
+      "textChars": 951,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 3,
+      "textChars": 1520,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 4,
+      "textChars": 774,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 5,
+      "textChars": 1779,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 6,
+      "textChars": 1369,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 7,
+      "textChars": 815,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 8,
+      "textChars": 947,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 9,
+      "textChars": 1145,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 10,
+      "textChars": 726,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 11,
+      "textChars": 1025,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 12,
+      "textChars": 1361,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 13,
+      "textChars": 480,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 14,
+      "textChars": 1895,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 15,
+      "textChars": 1585,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 16,
+      "textChars": 1594,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "pdf",
+      "page": 17,
+      "textChars": 1003,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 1,
+      "textChars": 170,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0,
+      "fontMetricOverlapCandidates": [
+        [
+          "Cursos Livres e Trilhas de ",
+          "Aprendizagem"
+        ]
+      ]
+    },
+    {
+      "format": "word",
+      "page": 2,
+      "textChars": 4056,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 3,
+      "textChars": 1524,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 4,
+      "textChars": 773,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 5,
+      "textChars": 1785,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 6,
+      "textChars": 1369,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 7,
+      "textChars": 844,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 8,
+      "textChars": 959,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 9,
+      "textChars": 1150,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 10,
+      "textChars": 736,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 11,
+      "textChars": 1525,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 12,
+      "textChars": 1369,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 13,
+      "textChars": 480,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 14,
+      "textChars": 1893,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 15,
+      "textChars": 1584,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 16,
+      "textChars": 1592,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    },
+    {
+      "format": "word",
+      "page": 17,
+      "textChars": 1011,
+      "outOfBounds": [],
+      "overlappingLines": [],
+      "replacementGlyphs": 0
+    }
+  ],
+  "renderedFromCorrectedProofDocument": true,
+  "seconds": 5.92,
+  "allPagesPassed": true
+}

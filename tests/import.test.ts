@@ -47,7 +47,7 @@ test('HTML source is text, external URLs and executable elements are not accepte
 
 test('DOCX import uses a real native document and preserves headings, tables, accents and images',async()=>{
   const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/l9kAAAAASUVORK5CYII=','base64');
-  const doc=new Document({sections:[{children:[
+  const doc=new Document({title:'Regulamento de cursos gratuitos',subject:'Condições de participação',creator:'CRA-SP',sections:[{children:[
     new Paragraph({text:'CAPÍTULO I — DO PROGRAMA',heading:HeadingLevel.HEADING_1}),
     new Paragraph({children:[new TextRun({text:'Art. 1º ',bold:true}),new TextRun('Texto integral, com ação e critérios.')] }),
     new Table({rows:[new TableRow({children:[new TableCell({children:[new Paragraph('Requisito')]}),new TableCell({children:[new Paragraph('Descrição')]})]}),
@@ -57,6 +57,9 @@ test('DOCX import uses a real native document and preserves headings, tables, ac
   const buffer=await Packer.toBuffer(doc);
   const result=await importDocument(buffer,'Regulamento.docx');
   assert.equal(result.format,'docx'); assert.equal(result.ocr,false); assert.equal(result.sha256.length,64);
+  assert.equal(result.metadata?.title,'Regulamento de cursos gratuitos');
+  assert.equal(result.metadata?.subject,'Condições de participação');
+  assert.equal(result.metadata?.author,'CRA-SP');
   assert.equal(result.blocks[0].kind,'heading');
   assert.equal(result.blocks[1].text,'Art. 1º Texto integral, com ação e critérios.');
   assert.deepEqual(result.blocks.find(block=>block.kind==='table')?.rows,[['Requisito','Descrição'],['Gratuidade','Integral, sem cobrança.']]);
@@ -122,4 +125,10 @@ test('DOCX archive validation checks actual decompression against declared ZIP s
   }
   assert.equal(changed,true);
   await assert.rejects(validateDocxArchive(forged),/compactad[ao]|estrutura|descompactado/);
+});
+
+
+test('cancelled imports stop before file parsing or any OCR provider request',async()=>{
+ const controller=new AbortController();controller.abort();
+ await assert.rejects(()=>importDocument(Buffer.from('cancelled'),'arquivo.pdf',controller.signal),{name:'AbortError'});
 });

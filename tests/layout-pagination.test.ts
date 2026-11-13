@@ -54,3 +54,59 @@ test('image decoding errors prevent a falsely successful PDF export',async()=>{
   const project=createProject();project.blocks=[{...makeBlock('image'),image:'data:image/png;base64,YmFk'}];
   await assert.rejects(()=>exportPdf(project),/imagem não pôde ser decodificada/);
 });
+
+test('institutional decision graph renders native branches, complete labels and automatic CRA-SP identity',async()=>{
+  const project=createProject();project.title='Cooperação e condições de participação';project.toc=false;
+  const diagram={...makeBlock('diagram','Fluxo de análise e aprovação'),layout:'decision' as const,
+    nodes:[{id:'start',label:'Recebimento',detail:'A proposta é recebida e registrada.',sourceIds:[]},
+      {id:'yes',label:'Atende aos critérios',detail:'Encaminhar para análise.',sourceIds:[]},
+      {id:'no',label:'Necessita complementação',detail:'Solicitar documentação.',sourceIds:[]},
+      {id:'end',label:'Deliberação',detail:'Apreciar a proposta instruída.',sourceIds:[]}],
+    edges:[{from:'start',to:'yes',label:'Completa'},{from:'start',to:'no',label:'Pendente'},
+      {from:'yes',to:'end',label:''},{from:'no',to:'end',label:''}]};
+  project.blocks=[diagram];
+  const result=await withDocumentPage(project,page=>page.evaluate(()=>{
+    const figure=document.querySelector<HTMLElement>('.dg-diagram')!;
+    const nodes=[...figure.querySelectorAll<HTMLElement>('.dg-diagram-node')];
+    const bounds=figure.getBoundingClientRect();
+    return {nodes:nodes.map(node=>node.textContent),paths:figure.querySelectorAll('svg > path').length,
+      logo:(document.querySelector('.dg-header img') as HTMLImageElement).naturalWidth,
+      clipping:nodes.some(node=>{const rect=node.getBoundingClientRect();return rect.left<bounds.left||rect.right>bounds.right||rect.bottom>bounds.bottom;}),
+      issues:(window as any).__layoutResult.issues};
+  }));
+  assert.equal(result.nodes.length,4);assert.match(result.nodes.join(' '),/Solicitar documentação/);
+  assert.equal(result.paths,4);assert.ok(result.logo>0);assert.equal(result.clipping,false);assert.deepEqual(result.issues,[]);
+});
+
+test('physical composition captures exact table fragments, graphic data and populated TOC pages for Word',async()=>{
+  const {readDocumentComposition}=await import('../server/export/browser');
+  const project=createProject();project.cover=false;
+  project.blocks=[makeBlock('heading','Requisitos de participação'),
+    {...makeBlock('table'),rows:[['Critério','Evidência'],['Gratuidade','Declaração e condições da oferta.']]},
+    {...makeBlock('diagram','Etapas'),layout:'process',nodes:[{id:'one',label:'Solicitar',detail:'Apresentar a proposta.',sourceIds:[]}],edges:[]}];
+  const composition=await readDocumentComposition(project);
+  assert.equal(composition.pages[0].kind,'toc');assert.equal(composition.toc[0].page,2);
+  const fragments=composition.pages.flatMap(page=>page.fragments);
+  assert.deepEqual(fragments.find(fragment=>fragment.kind==='table')?.rows,project.blocks[1].rows);
+  assert.equal(fragments.find(fragment=>fragment.kind==='diagram')?.nodes[0].label,'Solicitar');
+  assert.ok(fragments.every(fragment=>fragment.top>=30&&fragment.top+fragment.height<=273.1));
+  assert.deepEqual(composition.issues,[]);
+});
+
+test('consecutive section and infographic titles stay with a large graph and skip-edge labels remain clear',async()=>{
+  const {inspectDocument,readDocumentComposition}=await import('../server/export/browser');
+  const project=createProject();project.cover=false;
+  const heading=makeBlock('heading','Fluxo de análise e aprovação');heading.level=2;
+  const nodes=Array.from({length:7},(_,index)=>({id:`stage-${index}`,label:`Etapa ${index+1}`,
+    detail:'Conferência e encaminhamento da documentação.',sourceIds:[]}));
+  const edges=nodes.slice(0,-1).map((node,index)=>({from:node.id,to:nodes[index+1].id,label:''}));
+  edges.push({from:nodes[1].id,to:nodes[6].id,label:'Sem pendência'});
+  const graph={...makeBlock('diagram','Da proposta à decisão'),layout:'decision' as const,nodes,edges};
+  project.blocks=[makeBlock('paragraph','Condições de participação e responsabilidades institucionais. '.repeat(50)),heading,graph];
+  const inspected=await inspectDocument(project);assert.deepEqual(inspected.issues,[]);
+  const composition=await readDocumentComposition(project);
+  const pageWithGraph=composition.pages.find(page=>page.fragments.some(fragment=>fragment.kind==='diagram'))!;
+  assert.ok(pageWithGraph.fragments.some(fragment=>fragment.blockId===heading.id));
+  assert.ok(pageWithGraph.fragments.some(fragment=>fragment.role==='component-title'));
+  assert.deepEqual(composition.pages.flatMap(page=>page.tocEntries||[]),composition.toc);
+});
